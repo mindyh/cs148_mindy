@@ -4,6 +4,7 @@
 #define __ASSIGNMENT_3__
 
 #include "common/Application.h"
+#include "common/core.h" // <-- haha.
 
 class Assignment3: public Application
 {
@@ -27,7 +28,12 @@ private:
     virtual void SetupExample2();
     virtual void GenericSetupExample(std::shared_ptr<class ShaderProgram> shader, std::shared_ptr<ShaderProgram> groundShader);
 
-    virtual void SetupCamera();
+    virtual void SetupCamera(bool isFirst);
+
+    void MakePointLight(glm::vec3 position, glm::vec4 color, float radius = 100.f);
+    void MakeDirectionalLight(glm::vec3 position, glm::vec3 forward_direction, glm::vec4 color);
+    void MakeHemisphereLight(glm::vec4 sky_color, glm::vec4 ground_color);
+    void MakeMesh(std::string file_name, std::shared_ptr<EpicShader> shader);
 
     std::shared_ptr<class Light> sunLight;
     // std::shared_ptr<class Light> hemisphereLight;
