@@ -57,7 +57,7 @@ void EpicShader::SetupShaderLighting(const Light* light) const
             case Light::LightType::DIRECTIONAL:
                 SetShaderUniform("lightingType", static_cast<int>(Light::LightType::DIRECTIONAL));
                 SetShaderUniform(light->GetName() + ".light_color", lightProperty->light_color);
-                SetShaderUniform(light->GetName() + ".forward_direction", lightProperty->forward_direction);
+                SetShaderUniform(light->GetName() + ".forward_direction", light->GetForwardDirection());
                 SetShaderUniform(light->GetName() + ".point_position", lightProperty->point_position);
                 break;
             case Light::LightType::HEMISPHERE:

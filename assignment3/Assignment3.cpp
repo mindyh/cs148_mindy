@@ -33,31 +33,31 @@ glm::vec2 Assignment3::GetWindowSize() const
 
 void Assignment3::SetupScene()
 {
-    SetupExample1();
+    SetupExample2();
 }
 
 void Assignment3::SetupCamera(bool isFirst)
 {
-    if (isFirst) {
-        camera->SetPosition(glm::vec3(-35.698f, 40.571f, -2.285f));
-        camera->Rotate(glm::vec3(SceneObject::GetWorldUp()), -3.3f * PI / 5.f);
-        camera->Rotate(glm::vec3(camera->GetRightDirection()), -PI / 8.f);
-        camera->Translate(glm::vec3(camera->GetRightDirection()) * 10.f);
-        camera->Translate(glm::vec3(camera->GetForwardDirection()) * -10.f);
+    // if (isFirst) {
+    //     camera->SetPosition(glm::vec3(-35.698f, 40.571f, -2.285f));
+    //     camera->Rotate(glm::vec3(SceneObject::GetWorldUp()), -3.3f * PI / 5.f);
+    //     camera->Rotate(glm::vec3(camera->GetRightDirection()), -PI / 8.f);
+    //     camera->Translate(glm::vec3(camera->GetRightDirection()) * 10.f);
+    //     camera->Translate(glm::vec3(camera->GetForwardDirection()) * -10.f);
 
-        PerspectiveCamera* pcamera = static_cast<PerspectiveCamera*>(camera.get());
-        pcamera->SetZFar(1000.f);    
-    } else {
-        PerspectiveCamera* pcamera = static_cast<PerspectiveCamera*>(camera.get());
-        pcamera->SetFOV(34.45f); //57.59 field of view
-        pcamera->SetZNear(0.1f);
-        pcamera->SetZFar(10000.f);
-        
-        camera->SetPosition(glm::vec3(-49.213f, 1.179f, -6.191f));
-        camera->Rotate(glm::vec3(1.f, 0.f, 0.f), 13.037f * PI / 180.f);
-        camera->Rotate(glm::vec3(0.f, 1.f, 0.f), 260.857f * PI / 180.f);
-        camera->Rotate(glm::vec3(0.f, 0.f, 1.f), 0.f * PI / 180.f);
-    }
+    //     PerspectiveCamera* pcamera = static_cast<PerspectiveCamera*>(camera.get());
+    //     pcamera->SetZFar(1000.f);    
+    // } else {
+    PerspectiveCamera* pcamera = static_cast<PerspectiveCamera*>(camera.get());
+    pcamera->SetFOV(32.267f);  // 54.43 Angle of view
+    pcamera->SetZNear(0.1f);
+    pcamera->SetZFar(10000.f);
+
+    camera->SetPosition(glm::vec3(-43.866f, -0.431f, -9.283f));
+    camera->Rotate(glm::vec3(1.f, 0.f, 0.f), 22.037f * PI / 180.f);
+    camera->Rotate(glm::vec3(0.f, 1.f, 0.f), 256.857f * PI / 180.f);
+    camera->Rotate(glm::vec3(0.f, 0.f, 1.f), 0.f * PI / 180.f);
+    // }
 }
 
 void Assignment3::HandleInput(SDL_Keysym key, Uint32 state, Uint8 repeat, double timestamp, double deltaTime)
@@ -123,7 +123,7 @@ void Assignment3::HandleWindowResize(float x, float y)
 void Assignment3::SetupExample1()
 {
     scene->ClearScene();
-    SetupCamera(true);
+    // SetupCamera(true);
 
     std::unordered_map<GLenum, std::string> shaderSpec = {
         { GL_VERTEX_SHADER, "brdf/epic/frag/noSubroutine/epic.vert" },
@@ -141,15 +141,24 @@ void Assignment3::SetupExample1()
     groundShader->SetSpecular(glm::vec4(1.f, 1.f, 1.f, 1.f));
 
     MakePointLight(glm::vec3(10,10,10), glm::vec4(1.f, 0.5f, 0.f, 1.f), 100.f);
-    MakeDirectionalLight(glm::vec3(0,0,10), glm::vec3(0.f, 1.f, 3.f), glm::vec4(0.f, 0.0f, 1.f, 1.f));
+    MakeDirectionalLight(glm::vec3(0.f, 1.f, 3.f), glm::vec4(0.f, 0.0f, 1.f, 1.f));
     MakeHemisphereLight(glm::vec4(0.f, 0.1f, 0.f, 1.f), glm::vec4(0.89, 0.349f, 0.f, 1.f));
 
     // set up scene objects
     GenericSetupExample(shader, groundShader);
-
 }
 
-void Assignment3::MakeMesh(std::string file_name, std::shared_ptr<EpicShader> shader) {
+void Assignment3::MakeMesh(std::string file_name, float r, float m, glm::vec4 spec) {
+    std::unordered_map<GLenum, std::string> shaderSpec = {
+        { GL_VERTEX_SHADER, "brdf/epic/frag/noSubroutine/epic.vert" },
+        { GL_FRAGMENT_SHADER, "brdf/epic/frag/noSubroutine/epic.frag"}
+    };
+
+    std::shared_ptr<EpicShader> shader = std::make_shared<EpicShader>(shaderSpec, GL_FRAGMENT_SHADER);
+    shader->SetRoughness(r);
+    shader->SetMetallic(m);
+    shader->SetSpecular(spec);
+
     std::vector<std::shared_ptr<RenderingObject>> meshTemplate = MeshLoader::LoadMesh(shader, file_name);
     if (meshTemplate.empty()) {
         std::cerr << "ERROR: Failed to load the model " << file_name << " . Check your paths." << std::endl;
@@ -173,15 +182,16 @@ void Assignment3::MakePointLight(glm::vec3 position,
     scene->AddLight(pointLight);
 }
 
-void Assignment3::MakeDirectionalLight(glm::vec3 position, 
-                                       glm::vec3 forward_direction, 
+void Assignment3::MakeDirectionalLight(glm::vec3 forward_direction, 
                                        glm::vec4 color) {
     std::unique_ptr<EpicLightProperties> directionalLightProperties = EpicShader::CreateLightProperties();
     directionalLightProperties->light_color = color;
-    directionalLightProperties->point_position = glm::vec4(position, 0.f);
-    directionalLightProperties->forward_direction = glm::vec4(forward_direction, 0.f);
     std::shared_ptr<class Light> directionalLight = std::make_shared<Light>(std::move(directionalLightProperties),
                                                                       Light::LightType::DIRECTIONAL, "directionalLight");
+    directionalLight->Rotate(glm::vec3(1.f, 0.f, 0.f), forward_direction.x * PI / 180.f);
+    directionalLight->Rotate(glm::vec3(0.f, 1.f, 0.f), forward_direction.y * PI / 180.f);
+    directionalLight->Rotate(glm::vec3(0.f, 0.f, 1.f), forward_direction.z * PI / 180.f);
+
     scene->AddLight(directionalLight);
 }
 
@@ -198,29 +208,25 @@ void Assignment3::SetupExample2() {
     scene->ClearScene();
     SetupCamera(false);
 
-    std::unordered_map<GLenum, std::string> shaderSpec = {
-        { GL_VERTEX_SHADER, "brdf/epic/frag/noSubroutine/epic.vert" },
-        { GL_FRAGMENT_SHADER, "brdf/epic/frag/noSubroutine/epic.frag"}
-    };
+    // r, m, spec
+    MakeMesh("BlackWidow/black_widow.obj", 0.5, 0.2, glm::vec4(0.7,0.7,0.7,1));
+    MakeMesh("Hawkeye/hawkeye.obj", 0.7, 0., glm::vec4(0.3,0.3,0.3,1));
+    MakeMesh("Helicopter/helicopter.obj", 0.5, 0.9, glm::vec4(0.7,0.7,0.7,1));
+    MakeMesh("IronMan/IronMan.obj", 0.5, 0.9, glm::vec4(0.7,0.7,0.7,1));
+    MakeMesh("Thor/thor.obj", 0.5, 0., glm::vec4(0.2,0.2,0.2,1));
+    MakeMesh("Hulk/hulk.obj", 0.5, 0., glm::vec4(0.2,0.2,0.2,1));
+    MakeMesh("CaptainAmerica/Captain_America.obj", 0.5, 0.2, glm::vec4(0.2,0.2,0.2,1));
+    MakeMesh("buildings/destroyed_building_left.obj", 0.5, 0.6, glm::vec4(0.2,0.2,0.2,1));
+    MakeMesh("buildings/destroyed_building_right.obj", 0.5, 0.6, glm::vec4(0.2,0.2,0.2,1));
 
-    std::shared_ptr<EpicShader> shader = std::make_shared<EpicShader>(shaderSpec, GL_FRAGMENT_SHADER);
-    shader->SetRoughness(0.2f);
-    shader->SetMetallic(0.7f);
-    shader->SetSpecular(glm::vec4(0.f, 1.f, 0.f, 1.f));
-
-    MakeMesh("Hawkeye/hawkeye.obj", shader);
-    MakeMesh("BlackWidow/black_widow.obj", shader);
-    MakeMesh("IronMan/IronMan.obj", shader);
-    MakeMesh("buildings/destroyed_building1.obj", shader);
-    MakeMesh("buildings/destroyed_building2.obj", shader);
-    MakeMesh("CaptainAmerica/Captain_America_The_First_Avenger.obj", shader);
-    MakeMesh("Thor/Thor_Avengers.obj", shader);
-    MakeMesh("Hulk/Hulk_Avengers.obj", shader);
-    MakeMesh("shield/shield.obj", shader);
-
-    MakePointLight(glm::vec3(208.711f, 99.565f, 173.785f), glm::vec4(1,0,0,1), 10000);
-    MakePointLight(glm::vec3(-129.669f, 126.841f, -70.083f), glm::vec4(1,0,0,1), 10000);
-    MakePointLight(glm::vec3(270.366f, 98.014f, 53.169f), glm::vec4(1,0,0,1), 10000);
+    // sunlight
+    MakeDirectionalLight(glm::vec3(-123.992f, -2.667, 33.612), glm::vec4(0.7,0.7,0.7,1));
+    // explosion  right
+    MakePointLight(glm::vec3(352.634f, 174.693f, 265.913f), glm::vec4(1.5,0.3,0,1), 10000);
+    // explosion left
+    MakePointLight(glm::vec3(726.656f, 190.738f, -137.344f), glm::vec4(1,0.5,0,1), 10000);
+    // hemisphere light
+    MakeHemisphereLight(glm::vec4(0.7f, 0.2f, 0.0f, 1.f), glm::vec4(0.f, 0.5f, 1.5f, 1.f));
 }
 
 void Assignment3::GenericSetupExample(std::shared_ptr<ShaderProgram> shader, std::shared_ptr<ShaderProgram> groundShader)

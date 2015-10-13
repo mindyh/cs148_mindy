@@ -31,9 +31,10 @@ private:
     virtual void SetupCamera(bool isFirst);
 
     void MakePointLight(glm::vec3 position, glm::vec4 color, float radius = 100.f);
-    void MakeDirectionalLight(glm::vec3 position, glm::vec3 forward_direction, glm::vec4 color);
+    void MakeDirectionalLight(glm::vec3 forward_direction, glm::vec4 color);
     void MakeHemisphereLight(glm::vec4 sky_color, glm::vec4 ground_color);
-    void MakeMesh(std::string file_name, std::shared_ptr<EpicShader> shader);
+
+    void MakeMesh(std::string file_name, float r, float m, glm::vec4 spec);
 
     std::shared_ptr<class Light> sunLight;
     // std::shared_ptr<class Light> hemisphereLight;
