@@ -74,7 +74,7 @@ vec4 calcBRDF(vec4 worldPosition, vec3 worldNormal, vec4 L, vec3 light_color) {
         s = (D * F * G) / (4.0 * dot(N, L) * dot(N, V));
     }
 
-    return vec4(light_color * dot(N, L) * (d + s), 1.f);
+    return vec4(light_color * clamp(dot(N, L), 0, 1) * (d + s), 1.f);
 }
 
 vec4 hemisphereLightSubroutine(vec4 worldPosition, vec3 worldNormal)

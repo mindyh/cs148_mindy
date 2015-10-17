@@ -1,4 +1,4 @@
-#version 400
+#version 330
 
 in vec4 vertexWorldPosition;
 in vec3 vertexWorldNormal;

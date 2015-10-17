@@ -35,7 +35,7 @@ public:
      *  Subclasses of the Light class should pass in the appropriate LightType to the base class constructor.
      *  Note that a point light should probably be its own subclass instead of just hijacking the base class.
      */
-    Light(std::unique_ptr<struct LightProperties> inProperties, LightType type, std::string name);
+    Light(std::unique_ptr<struct LightProperties> inProperties, LightType type = LightType::POINT, std::string name = "");
     virtual ~Light();
 
     /*! \brief Returns the attenuation parameters for the light.

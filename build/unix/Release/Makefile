@@ -111,29 +111,29 @@ cs148opengl4/fast:
 	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/build
 .PHONY : cs148opengl4/fast
 
-assignment3/Assignment3.o: assignment3/Assignment3.cpp.o
-.PHONY : assignment3/Assignment3.o
+assignment4/Assignment4.o: assignment4/Assignment4.cpp.o
+.PHONY : assignment4/Assignment4.o
 
 # target to build an object file
-assignment3/Assignment3.cpp.o:
-	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/assignment3/Assignment3.cpp.o
-.PHONY : assignment3/Assignment3.cpp.o
+assignment4/Assignment4.cpp.o:
+	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/assignment4/Assignment4.cpp.o
+.PHONY : assignment4/Assignment4.cpp.o
 
-assignment3/Assignment3.i: assignment3/Assignment3.cpp.i
-.PHONY : assignment3/Assignment3.i
+assignment4/Assignment4.i: assignment4/Assignment4.cpp.i
+.PHONY : assignment4/Assignment4.i
 
 # target to preprocess a source file
-assignment3/Assignment3.cpp.i:
-	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/assignment3/Assignment3.cpp.i
-.PHONY : assignment3/Assignment3.cpp.i
+assignment4/Assignment4.cpp.i:
+	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/assignment4/Assignment4.cpp.i
+.PHONY : assignment4/Assignment4.cpp.i
 
-assignment3/Assignment3.s: assignment3/Assignment3.cpp.s
-.PHONY : assignment3/Assignment3.s
+assignment4/Assignment4.s: assignment4/Assignment4.cpp.s
+.PHONY : assignment4/Assignment4.s
 
 # target to generate assembly for a file
-assignment3/Assignment3.cpp.s:
-	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/assignment3/Assignment3.cpp.s
-.PHONY : assignment3/Assignment3.cpp.s
+assignment4/Assignment4.cpp.s:
+	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/assignment4/Assignment4.cpp.s
+.PHONY : assignment4/Assignment4.cpp.s
 
 common/Application.o: common/Application.cpp.o
 .PHONY : common/Application.o
@@ -576,9 +576,9 @@ help:
 	@echo "... cs148opengl4"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... assignment3/Assignment3.o"
-	@echo "... assignment3/Assignment3.i"
-	@echo "... assignment3/Assignment3.s"
+	@echo "... assignment4/Assignment4.o"
+	@echo "... assignment4/Assignment4.i"
+	@echo "... assignment4/Assignment4.s"
 	@echo "... common/Application.o"
 	@echo "... common/Application.i"
 	@echo "... common/Application.s"

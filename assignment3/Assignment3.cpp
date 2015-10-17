@@ -3,9 +3,6 @@
 #include "common/Utility/Mesh/Loading/MeshLoader.h"
 #include "common/Utility/Texture/TextureLoader.h"
 
-//#include "instructor/Light/DirectionalLight.h"
-//#include "instructor/Light/HemisphereLight.h"
-
 #include <cmath>
 
 Assignment3::Assignment3(std::shared_ptr<class Scene> inputScene, std::shared_ptr<class Camera> inputCamera):

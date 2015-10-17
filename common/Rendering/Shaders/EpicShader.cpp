@@ -10,6 +10,7 @@ std::array<const char*, 3> EpicShader::MATERIAL_PROPERTY_NAMES = {
     "InputMaterial.matRoughness", 
     "InputMaterial.matSpecular"
 };
+
 const int EpicShader::MATERIAL_BINDING_POINT = 0;
 
 EpicShader::EpicShader(const std::unordered_map<GLenum, std::string>& inputShaders, GLenum lightingStage):
@@ -93,7 +94,6 @@ void EpicShader::UpdateMaterialBlock() const
 
     // While we're here, also setup the textures too.
     SetShaderUniform("diffuseTexture", static_cast<int>(TextureSlots::DIFFUSE));
-    SetShaderUniform("specularTexture", static_cast<int>(TextureSlots::SPECULAR));
 
     StopUseShader();
 }
@@ -122,14 +122,6 @@ void EpicShader::SetupShaderMaterials() const
     }
     assert(diffuseTexture);
     diffuseTexture->BeginRender(static_cast<int>(TextureSlots::DIFFUSE));
-
-    const Texture* specularTexture = defaultTexture.get();
-    if (textureSlotMapping.find(TextureSlots::SPECULAR) != textureSlotMapping.end()) {
-        specularTexture = textureSlotMapping.at(TextureSlots::SPECULAR).get();
-    }
-    assert(specularTexture);
-    specularTexture->BeginRender(static_cast<int>(TextureSlots::SPECULAR));
-
 }
 
 void EpicShader::SetupShaderCamera(const class Camera* camera) const
