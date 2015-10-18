@@ -10,6 +10,7 @@ uniform InputMaterial {
     float matMetallic;
     float matRoughness;
     vec4 matSpecular;
+    bool matLight;
 } material;
 
 struct EpicLightProperties {
@@ -41,7 +42,7 @@ const int POINT = 1;
 const int DIRECTIONAL = 2;
 const int HEMISPHERE = 3;
 
-vec4 calcBRDF(vec4 worldPosition, vec3 worldNormal, vec4 L, vec3 light_color) {
+vec4 calcBRDF(vec4 worldPosition, vec3 worldNormal, vec4 L, vec3 light_color, bool is_affected_by_light) {
      // Normal to the surface
     vec4 N = vec4(normalize(worldNormal), 0.f);
 
@@ -76,10 +77,13 @@ vec4 calcBRDF(vec4 worldPosition, vec3 worldNormal, vec4 L, vec3 light_color) {
         s = (D * F * G) / (4.0 * dot(N, L) * dot(N, V));
     }
 
-    return vec4(light_color * clamp(dot(N, L), 0, 1) * (d + s), 1.f);
+    if (is_affected_by_light)
+        return vec4(light_color * clamp(dot(N, L), 0, 1) * (d + s), 1.f);
+    else 
+        return vec4(light_color * clamp(dot(N, L), 0, 1), 1.f);
 }
 
-vec4 hemisphereLightSubroutine(vec4 worldPosition, vec3 worldNormal)
+vec4 hemisphereLightSubroutine(vec4 worldPosition, vec3 worldNormal, bool is_affected_by_light)
 {
     // Normal to the surface
     vec3 N = normalize(worldNormal);
@@ -89,22 +93,22 @@ vec4 hemisphereLightSubroutine(vec4 worldPosition, vec3 worldNormal)
 
     vec4 L = vec4(N, 0.f);
 
-    return calcBRDF(worldPosition, worldNormal, L, light_color);
+    return calcBRDF(worldPosition, worldNormal, L, light_color, is_affected_by_light);
 }
 
-vec4 directionalLightSubroutine(vec4 worldPosition, vec3 worldNormal)
+vec4 directionalLightSubroutine(vec4 worldPosition, vec3 worldNormal, bool is_affected_by_light)
 {    
     vec4 L = -directionalLight.forward_direction;
     
-    return calcBRDF(worldPosition, worldNormal, L, directionalLight.light_color.xyz);
+    return calcBRDF(worldPosition, worldNormal, L, directionalLight.light_color.xyz, is_affected_by_light);
 }
 
-vec4 pointLightSubroutine(vec4 worldPosition, vec3 worldNormal)
+vec4 pointLightSubroutine(vec4 worldPosition, vec3 worldNormal, bool is_affected_by_light)
 {    
     // Direction from the surface to the light
     vec4 L = normalize(pointLight.point_position - worldPosition);
 
-    return calcBRDF(worldPosition, worldNormal, L, pointLight.light_color.xyz);
+    return calcBRDF(worldPosition, worldNormal, L, pointLight.light_color.xyz, is_affected_by_light);
 }
 
 vec4 globalLightSubroutine(vec4 worldPosition, vec3 worldNormal)
@@ -123,14 +127,16 @@ float AttenuateLight(vec4 worldPosition)
 void main()
 {
     vec4 lightingColor = vec4(0);
-    if (lightingType == GLOBAL) {
+    if (!material.matLight) {
+        lightingColor = pointLightSubroutine(vertexWorldPosition, vertexWorldNormal, false);
+    } else if (lightingType == GLOBAL) {
         finalColor = globalLightSubroutine(vertexWorldPosition, vertexWorldNormal);
     } else if (lightingType == POINT) {
-        lightingColor = pointLightSubroutine(vertexWorldPosition, vertexWorldNormal);
+        lightingColor = pointLightSubroutine(vertexWorldPosition, vertexWorldNormal, true);
         finalColor = AttenuateLight(vertexWorldPosition) * lightingColor;
     } else if (lightingType == DIRECTIONAL) {
-        finalColor = directionalLightSubroutine(vertexWorldPosition, vertexWorldNormal);
+        finalColor = directionalLightSubroutine(vertexWorldPosition, vertexWorldNormal, true);
     } else if (lightingType == HEMISPHERE) {
-        finalColor = hemisphereLightSubroutine(vertexWorldPosition, vertexWorldNormal);
+        finalColor = hemisphereLightSubroutine(vertexWorldPosition, vertexWorldNormal, true);
     }
 }

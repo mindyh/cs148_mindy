@@ -25,6 +25,7 @@ public:
         POINT,
         DIRECTIONAL,
         HEMISPHERE,
+        NO_LIGHT,
         IBL
     };
 

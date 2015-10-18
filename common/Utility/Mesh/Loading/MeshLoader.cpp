@@ -20,11 +20,12 @@ std::vector<std::shared_ptr<RenderingObject>> LoadMesh(std::shared_ptr<ShaderPro
 
     const std::string completeFilename = std::string(STRINGIFY(ASSET_PATH)) + "/" + filename;
 
-    const aiScene* scene = importer.ReadFile(completeFilename.c_str(),
+ const aiScene* scene = importer.ReadFile(completeFilename.c_str(),
             aiProcess_CalcTangentSpace       | 
             aiProcess_Triangulate            |
             aiProcess_JoinIdenticalVertices  |
             aiProcess_FixInfacingNormals |
+            aiProcess_FindInstances |
             aiProcess_SortByPType);
     if (!scene) {
         std::cerr << "ERROR: Assimp failed -- " << importer.GetErrorString() << std::endl;

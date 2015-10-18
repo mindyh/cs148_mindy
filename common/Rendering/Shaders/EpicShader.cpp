@@ -1,20 +1,21 @@
 #include "common/Rendering/Shaders/EpicShader.h"
 #include "common/Rendering/Textures/Texture.h"
 #include "common/Scene/Light/Light.h"
-#include "common/Scene/Light/Properties/Epic/EpicLightProperties.h"
+#include "common/Scene/Light/LightProperties.h"
 #include "common/Scene/Camera/Camera.h"
 #include "common/Utility/Texture/TextureLoader.h"
 
-std::array<const char*, 3> EpicShader::MATERIAL_PROPERTY_NAMES = {
+std::array<const char*, 4> EpicShader::MATERIAL_PROPERTY_NAMES = {
     "InputMaterial.matMetallic", 
     "InputMaterial.matRoughness", 
-    "InputMaterial.matSpecular"
+    "InputMaterial.matSpecular",
+    "InputMaterial.matLight"
 };
 
 const int EpicShader::MATERIAL_BINDING_POINT = 0;
 
 EpicShader::EpicShader(const std::unordered_map<GLenum, std::string>& inputShaders, GLenum lightingStage):
-    ShaderProgram(inputShaders), metallic(1.f), roughness(1.f), specular(glm::vec3(0.f), 1.f), 
+    ShaderProgram(inputShaders), metallic(1.f), roughness(1.f), specular(glm::vec3(0.f), 1.f), is_affected_by_light_(true), 
     materialBlockLocation(0), materialBlockSize(0), materialBuffer(0),
     lightingShaderStage(lightingStage)
 {
@@ -22,7 +23,7 @@ EpicShader::EpicShader(const std::unordered_map<GLenum, std::string>& inputShade
         return;
     }
 
-    SetupUniformBlock<3>("InputMaterial", MATERIAL_PROPERTY_NAMES, materialIndices, materialOffsets, materialStorage, materialBlockLocation, materialBlockSize, materialBuffer);
+    SetupUniformBlock<4>("InputMaterial", MATERIAL_PROPERTY_NAMES, materialIndices, materialOffsets, materialStorage, materialBlockLocation, materialBlockSize, materialBuffer);
     UpdateMaterialBlock();
 
     (void)lightingShaderStage;
@@ -45,7 +46,7 @@ void EpicShader::SetupShaderLighting(const Light* light) const
         SetShaderUniform("lightingType", static_cast<int>(Light::LightType::GLOBAL));
     } else {
         // Get the light's properties
-        const EpicLightProperties* lightProperty = static_cast<const EpicLightProperties*>(light->GetPropertiesRaw());
+        const LightProperties* lightProperty = static_cast<const LightProperties*>(light->GetPropertiesRaw());
 
         // Select proper lighting subroutine based on the light's type.
         switch(light->GetLightType()) {
@@ -66,7 +67,6 @@ void EpicShader::SetupShaderLighting(const Light* light) const
                 SetShaderUniform(light->GetName() + ".sky_color", lightProperty->sky_color);
                 SetShaderUniform(light->GetName() + ".ground_color", lightProperty->ground_color);
                 break;
-
             default:
                 std::cerr << "WARNING: Light type is not supported. Defaulting to global light. Your output may look wrong. -- Ignoring: " << static_cast<int>(light->GetLightType()) << std::endl;
                 SetShaderUniform("lightingType", static_cast<int>(Light::LightType::GLOBAL));
@@ -83,6 +83,7 @@ void EpicShader::UpdateMaterialBlock() const
     memcpy((void*)(materialStorage.data() + materialOffsets[0]), &metallic, sizeof(float));
     memcpy((void*)(materialStorage.data() + materialOffsets[1]), &roughness, sizeof(float));
     memcpy((void*)(materialStorage.data() + materialOffsets[2]), glm::value_ptr(specular), sizeof(glm::vec4));
+    memcpy((void*)(materialStorage.data() + materialOffsets[3]), &is_affected_by_light_, sizeof(bool));
 
     if (materialBuffer && materialBlockLocation != GL_INVALID_INDEX) {
         OGL_CALL(glBindBuffer(GL_UNIFORM_BUFFER, materialBuffer));
@@ -129,11 +130,6 @@ void EpicShader::SetupShaderCamera(const class Camera* camera) const
     SetShaderUniform("cameraPosition", camera->GetPosition());
 }
 
-std::unique_ptr<EpicLightProperties> EpicShader::CreateLightProperties()
-{
-    return make_unique<EpicLightProperties>();
-}
-
 void EpicShader::SetMetallic(float inMetallic) 
 { 
     metallic = inMetallic; 
@@ -150,6 +146,12 @@ void EpicShader::SetRoughness(float inRoughness)
 void EpicShader::SetSpecular(glm::vec4 inSpecular) 
 { 
     specular = inSpecular; 
+    UpdateMaterialBlock();
+}
+
+void EpicShader::SetLight(bool inLight) 
+{ 
+    is_affected_by_light_ = inLight; 
     UpdateMaterialBlock();
 }
 

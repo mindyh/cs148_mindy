@@ -65,6 +65,7 @@ public:
      */
     virtual void SetAmbient(glm::vec4 inAmbient);
 
+    virtual void SetLight(bool inLight);
 
     /*! \brief Corresponds to the texture unit that we want to bind the texture to.
      *
@@ -94,14 +95,15 @@ protected:
     glm::vec4 specular;
     float shininess;
     glm::vec4 ambient;
+    bool is_affected_by_light_;
 
     // Material Bindings into the Shader
-    static std::array<const char*, 4> MATERIAL_PROPERTY_NAMES;
+    static std::array<const char*, 5> MATERIAL_PROPERTY_NAMES;
     static const int MATERIAL_BINDING_POINT;
     GLuint materialBlockLocation;
     GLint materialBlockSize;
-    std::array<GLuint, 4> materialIndices;
-    std::array<GLint, 4> materialOffsets;
+    std::array<GLuint, 5> materialIndices;
+    std::array<GLint, 5> materialOffsets;
     GLuint materialBuffer;
     std::vector<GLubyte> materialStorage;
 

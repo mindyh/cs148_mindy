@@ -63,6 +63,8 @@ public:
      */
     virtual void SetSpecular(glm::vec4 inSpecular);
 
+    virtual void SetLight(bool inLight);
+
     /*! \brief Corresponds to the texture unit that we want to bind the texture to.
      *
      *  We specify the active texture unit using <a href="https://www.opengl.org/sdk/docs/man/html/glActiveTexture.xhtml">glActiveTexture</a>. The texture unit 
@@ -80,23 +82,21 @@ public:
      */
     virtual void SetTexture(TextureSlots::Type slot, std::shared_ptr<class Texture> inputTexture);
 
-    /*! \copydoc ShaderProgram::CreateLightProperties() 
-     */
-    static std::unique_ptr<struct EpicLightProperties> CreateLightProperties();
 protected:
     // Material Parameters
     virtual void UpdateMaterialBlock() const;
     float metallic;
     float roughness;
     glm::vec4 specular;
+    bool is_affected_by_light_;
 
     // Material Bindings into the Shader
-    static std::array<const char*, 3> MATERIAL_PROPERTY_NAMES;
+    static std::array<const char*, 4> MATERIAL_PROPERTY_NAMES;
     static const int MATERIAL_BINDING_POINT;
     GLuint materialBlockLocation;
     GLint materialBlockSize;
-    std::array<GLuint, 3> materialIndices;
-    std::array<GLint, 3> materialOffsets;
+    std::array<GLuint, 4> materialIndices;
+    std::array<GLint, 4> materialOffsets;
     GLuint materialBuffer;
     std::vector<GLubyte> materialStorage;
 
