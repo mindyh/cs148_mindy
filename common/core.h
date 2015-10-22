@@ -18,5 +18,8 @@
 #include "common/Scene/Camera/PerspectiveCamera.h"
 #include "common/Scene/Light/Light.h"
 #include "common/Scene/Light/LightProperties.h"
+#include "common/Rendering/Textures/Texture2D.h"
+#include "common/Rendering/Textures/CubeMapTexture.h"
+#include "common/Rendering/Shaders/CubeMapShader.h"
 
 #endif

@@ -1,4 +1,4 @@
- #pragma once
+#pragma once
 
 #ifndef __LIGHT_PROPERTIES__
 #define __LIGHT_PROPERTIES__

@@ -18,6 +18,8 @@ public:
     using NormalArray = std::vector<glm::vec3>;
     using UVArray = std::vector<glm::vec2>;
     using ColorArray = std::vector<glm::vec4>;
+    using TangentArray = std::vector<glm::vec3>;
+    using BitangentArray = std::vector<glm::vec3>;
 
     /*! \brief This enum has its values corresponding to the layout location qualifer on the vertex attribute array.
      */
@@ -25,7 +27,9 @@ public:
         Position = 0,
         Normals,
         UV,
-        Colors
+        Colors,
+        Tangent,
+        Bitangent
     };
 
     /*! \brief Constructs a RenderingObject from a shader and all the possible vertex attributes.
@@ -45,7 +49,9 @@ public:
         std::unique_ptr<IndexArray> inputIndices = nullptr,
         std::unique_ptr<NormalArray> inputNormals = nullptr,
         std::unique_ptr<UVArray> inputUV = nullptr,
-        std::unique_ptr<ColorArray> inputColors = nullptr);
+        std::unique_ptr<ColorArray> inputColors = nullptr,
+        std::unique_ptr<TangentArray> inputTangents  = nullptr,
+        std::unique_ptr<BitangentArray> inputBitangents = nullptr);
 
     /*! \brief Just another deconstructor.
      */
@@ -132,6 +138,16 @@ public:
      */
     virtual void SetVertexColors(std::unique_ptr<ColorArray> colors);
 
+    virtual void SetVertexTangents(std::unique_ptr<TangentArray> input);
+    virtual void SetVertexBitangents(std::unique_ptr<BitangentArray> input);
+
+    virtual void ComputeTangentSpace();
+    virtual void ReverseNormals();
+    virtual void ReverseVertexOrder();
+
+private:
+    virtual void ComputeTangentSpaceHelper(glm::ivec3 triangleVertexIndices, bool useStoredNormals, std::vector<int>& averager);
+
 protected:
     /*! \brief The shader program used to render the object.
      *
@@ -191,6 +207,12 @@ protected:
      */
     std::unique_ptr<ColorArray> vertexColors;
 
+    GLuint vertexTangentBuffer;
+    std::unique_ptr<TangentArray> vertexTangents;
+
+    GLuint vertexBitangentBuffer;
+    std::unique_ptr<BitangentArray> vertexBitangents;
+
     /*! \brief The default value sent to the shader if RenderingObject::vertexColors is not set. 
      *
      *  The <a href="https://www.opengl.org/sdk/docs/man/html/glVertexAttrib.xhtml">glVertexAttrib</a> function is used to set the default value.
@@ -208,12 +230,16 @@ protected:
     virtual void UpdateVertexNormals();
     virtual void UpdateVertexUV();
     virtual void UpdateVertexColors();
+    virtual void UpdateVertexTangents();
+    virtual void UpdateVertexBitangents();
 
     virtual void CleanupVertexPositions();
     virtual void CleanupVertexIndices();
     virtual void CleanupVertexNormals();
     virtual void CleanupVertexUV();
     virtual void CleanupVertexColors();
+    virtual void CleanupVertexTangents();
+    virtual void CleanupVertexBitangents();
 
     GLuint vao;
     GLenum drawMode;

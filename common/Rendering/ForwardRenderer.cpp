@@ -55,9 +55,10 @@ void ForwardRenderer::Render()
                 // Start from the end because the very 'last' light handles the global lighting for the object.
                 // A light that is a nullptr will cause the shader to perform default behavior, whatever that may be.
                 const Light* lightObject = scene->GetLightObject(totalRenderingPasses - p - 1);
-                sceneObject.PrepareShaderForRendering(shaderToUse, camera.get(), lightObject);
-
-                renderObject->Render();
+                if (shaderToUse->IsAffectedByLight(lightObject)) {
+                    sceneObject.PrepareShaderForRendering(shaderToUse, camera.get(), lightObject);
+                    renderObject->Render();
+                }
                 renderObject->EndRender();
 
                 shaderToUse->StopUseShader();

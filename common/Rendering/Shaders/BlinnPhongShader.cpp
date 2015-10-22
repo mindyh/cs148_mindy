@@ -1,5 +1,5 @@
 #include "common/Rendering/Shaders/BlinnPhongShader.h"
-#include "common/Rendering/Textures/Texture.h"
+#include "common/Rendering/Textures/Texture2D.h"
 #include "common/Scene/Light/Light.h"
 #include "common/Scene/Light/LightProperties.h"
 #include "common/Scene/Camera/Camera.h"
@@ -18,7 +18,7 @@ const int BlinnPhongShader::MATERIAL_BINDING_POINT = 0;
 BlinnPhongShader::BlinnPhongShader(const std::unordered_map<GLenum, std::string>& inputShaders, GLenum lightingStage):
     ShaderProgram(inputShaders), diffuse(glm::vec3(0.f), 1.f), specular(glm::vec3(0.f), 1.f), shininess(1.f), ambient(glm::vec3(0.1f), 1.f), 
     is_affected_by_light_(true),  materialBlockLocation(0), materialBlockSize(0), materialBuffer(0),
-    lightingShaderStage(lightingStage)
+    lightingShaderStage(lightingStage), maxDisplacement(0.5f)
 {
     if (!shaderProgram) {
         return;
@@ -127,10 +127,29 @@ void BlinnPhongShader::SetupShaderMaterials() const
     }
     assert(specularTexture);
     specularTexture->BeginRender(static_cast<int>(TextureSlots::SPECULAR));
+    
+    if (textureSlotMapping.find(TextureSlots::NORMAL) != textureSlotMapping.end()) {
+        const Texture* normalTexture = textureSlotMapping.at(TextureSlots::NORMAL).get();
+        normalTexture->BeginRender(static_cast<int>(TextureSlots::NORMAL));
+        SetShaderUniform("useNormalTexture", (int)true);
+    } else {
+        SetShaderUniform("useNormalTexture", (int)false);
+    }
+
+    if (textureSlotMapping.find(TextureSlots::DISPLACEMENT) != textureSlotMapping.end()) {
+        const Texture* displacementTexture = textureSlotMapping.at(TextureSlots::DISPLACEMENT).get();
+        displacementTexture->BeginRender(static_cast<int>(TextureSlots::DISPLACEMENT));
+        SetShaderUniform("useDisplacementTexture", (int)true);
+    } else {
+        SetShaderUniform("useDisplacementTexture", (int)false);
+    }
 
     // While we're here, also setup the textures too.
     SetShaderUniform("diffuseTexture", static_cast<int>(TextureSlots::DIFFUSE));
     SetShaderUniform("specularTexture", static_cast<int>(TextureSlots::SPECULAR));
+    SetShaderUniform("normalTexture", static_cast<int>(TextureSlots::NORMAL));
+    SetShaderUniform("displacementTexture", static_cast<int>(TextureSlots::DISPLACEMENT));
+    SetShaderUniform("maxDisplacement", maxDisplacement);
 }
 
 void BlinnPhongShader::SetupShaderCamera(const class Camera* camera) const
@@ -194,4 +213,9 @@ void BlinnPhongShader::LoadMaterialFromAssimp(std::shared_ptr<aiMaterial> assimp
     }
 
     UpdateMaterialBlock();
+}
+
+void BlinnPhongShader::SetMaxDisplacement(float input)
+{
+    maxDisplacement = input;
 }

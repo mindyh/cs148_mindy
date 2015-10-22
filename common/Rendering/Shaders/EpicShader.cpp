@@ -1,9 +1,10 @@
 #include "common/Rendering/Shaders/EpicShader.h"
-#include "common/Rendering/Textures/Texture.h"
+#include "common/Rendering/Textures/Texture2D.h"
 #include "common/Scene/Light/Light.h"
 #include "common/Scene/Light/LightProperties.h"
 #include "common/Scene/Camera/Camera.h"
 #include "common/Utility/Texture/TextureLoader.h"
+#include "assimp/material.h"
 
 std::array<const char*, 4> EpicShader::MATERIAL_PROPERTY_NAMES = {
     "InputMaterial.matMetallic", 
@@ -158,4 +159,37 @@ void EpicShader::SetLight(bool inLight)
 void EpicShader::SetTexture(TextureSlots::Type slot, std::shared_ptr<class Texture> inputTexture)
 {
     textureSlotMapping[slot] = std::move(inputTexture);
+}
+
+void EpicShader::LoadMaterialFromAssimp(std::shared_ptr<aiMaterial> assimpMaterial)
+{
+    if (!assimpMaterial) {
+        return;
+    }
+
+    // assimpMaterial->Get(AI_MATKEY_COLOR_DIFFUSE, glm::value_ptr(diffuse), nullptr);
+    // assimpMaterial->Get(AI_MATKEY_COLOR_SPECULAR, glm::value_ptr(specular), nullptr);
+    // assimpMaterial->Get(AI_MATKEY_SHININESS, &shininess, nullptr);
+    // assimpMaterial->Get(AI_MATKEY_COLOR_AMBIENT, glm::value_ptr(ambient), nullptr);
+
+    // if (assimpMaterial->GetTextureCount(aiTextureType_DIFFUSE)) {
+    //     aiString aiDiffusePath;
+    //     assimpMaterial->GetTexture(aiTextureType_DIFFUSE, 0, &aiDiffusePath);
+    //     std::string diffusePath(aiDiffusePath.C_Str());
+    //     SetTexture(TextureSlots::DIFFUSE, TextureLoader::LoadTexture(diffusePath));
+    // }
+
+    // if (assimpMaterial->GetTextureCount(aiTextureType_SPECULAR)) {
+    //     aiString aiSpecularPath;
+    //     assimpMaterial->GetTexture(aiTextureType_SPECULAR, 0, &aiSpecularPath);
+    //     std::string specularPath(aiSpecularPath.C_Str());
+    //     SetTexture(TextureSlots::SPECULAR, TextureLoader::LoadTexture(specularPath));
+    // }
+
+    UpdateMaterialBlock();
+}
+
+void EpicShader::SetMaxDisplacement(float input)
+{
+    maxDisplacement = input;
 }

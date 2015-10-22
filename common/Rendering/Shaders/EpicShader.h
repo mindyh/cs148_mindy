@@ -81,6 +81,8 @@ public:
      *  \param inputTexture A pointer to the assignment framework's representation of a texture.
      */
     virtual void SetTexture(TextureSlots::Type slot, std::shared_ptr<class Texture> inputTexture);
+    virtual void SetMaxDisplacement(float input);
+    virtual void LoadMaterialFromAssimp(std::shared_ptr<struct aiMaterial> assimpMaterial);
 
 protected:
     // Material Parameters
@@ -109,6 +111,7 @@ private:
     std::unordered_map<TextureSlots::Type, std::shared_ptr<class Texture>, std::hash<int> > textureSlotMapping;
 
     GLenum lightingShaderStage;
+    float maxDisplacement;
 };
 
 

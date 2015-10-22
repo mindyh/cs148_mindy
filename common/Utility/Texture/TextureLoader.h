@@ -5,12 +5,15 @@
 
 #include "common/common.h"
 
-class Texture;
+class Texture2D;
+class CubeMapTexture;
 
 namespace TextureLoader
 {
-
-std::shared_ptr<Texture> LoadTexture(const std::string& filename);
+GLubyte* LoadRawData(const std::string& filename, int& width, int& height);
+std::shared_ptr<Texture2D> LoadTexture(const std::string& filename);
+std::shared_ptr<CubeMapTexture> LoadCubeTexture(const std::string& front, const std::string& left, const std::string& right,
+    const std::string& top, const std::string& bottom, const std::string& back);
 
 }
 #endif

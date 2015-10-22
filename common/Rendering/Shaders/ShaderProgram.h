@@ -139,6 +139,7 @@ public:
         StopUseShader();  
     }
 
+    virtual bool IsAffectedByLight(const class Light* light) const { return true;  }
 protected:
     /*! \brief Reads in a shader object and returns the OpenGL shader object name.
      *  \param type Is the same as the shaderType paramter in <a href="https://www.opengl.org/sdk/docs/man/html/glCreateShader.xhtml">glCreateShader</a>.

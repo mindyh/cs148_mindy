@@ -279,6 +279,30 @@ common/Rendering/Shaders/BlinnPhongShader.cpp.s:
 	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/BlinnPhongShader.cpp.s
 .PHONY : common/Rendering/Shaders/BlinnPhongShader.cpp.s
 
+common/Rendering/Shaders/CubeMapShader.o: common/Rendering/Shaders/CubeMapShader.cpp.o
+.PHONY : common/Rendering/Shaders/CubeMapShader.o
+
+# target to build an object file
+common/Rendering/Shaders/CubeMapShader.cpp.o:
+	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/CubeMapShader.cpp.o
+.PHONY : common/Rendering/Shaders/CubeMapShader.cpp.o
+
+common/Rendering/Shaders/CubeMapShader.i: common/Rendering/Shaders/CubeMapShader.cpp.i
+.PHONY : common/Rendering/Shaders/CubeMapShader.i
+
+# target to preprocess a source file
+common/Rendering/Shaders/CubeMapShader.cpp.i:
+	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/CubeMapShader.cpp.i
+.PHONY : common/Rendering/Shaders/CubeMapShader.cpp.i
+
+common/Rendering/Shaders/CubeMapShader.s: common/Rendering/Shaders/CubeMapShader.cpp.s
+.PHONY : common/Rendering/Shaders/CubeMapShader.s
+
+# target to generate assembly for a file
+common/Rendering/Shaders/CubeMapShader.cpp.s:
+	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/CubeMapShader.cpp.s
+.PHONY : common/Rendering/Shaders/CubeMapShader.cpp.s
+
 common/Rendering/Shaders/EpicShader.o: common/Rendering/Shaders/EpicShader.cpp.o
 .PHONY : common/Rendering/Shaders/EpicShader.o
 
@@ -327,6 +351,30 @@ common/Rendering/Shaders/ShaderProgram.cpp.s:
 	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/ShaderProgram.cpp.s
 .PHONY : common/Rendering/Shaders/ShaderProgram.cpp.s
 
+common/Rendering/Textures/CubeMapTexture.o: common/Rendering/Textures/CubeMapTexture.cpp.o
+.PHONY : common/Rendering/Textures/CubeMapTexture.o
+
+# target to build an object file
+common/Rendering/Textures/CubeMapTexture.cpp.o:
+	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/common/Rendering/Textures/CubeMapTexture.cpp.o
+.PHONY : common/Rendering/Textures/CubeMapTexture.cpp.o
+
+common/Rendering/Textures/CubeMapTexture.i: common/Rendering/Textures/CubeMapTexture.cpp.i
+.PHONY : common/Rendering/Textures/CubeMapTexture.i
+
+# target to preprocess a source file
+common/Rendering/Textures/CubeMapTexture.cpp.i:
+	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/common/Rendering/Textures/CubeMapTexture.cpp.i
+.PHONY : common/Rendering/Textures/CubeMapTexture.cpp.i
+
+common/Rendering/Textures/CubeMapTexture.s: common/Rendering/Textures/CubeMapTexture.cpp.s
+.PHONY : common/Rendering/Textures/CubeMapTexture.s
+
+# target to generate assembly for a file
+common/Rendering/Textures/CubeMapTexture.cpp.s:
+	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/common/Rendering/Textures/CubeMapTexture.cpp.s
+.PHONY : common/Rendering/Textures/CubeMapTexture.cpp.s
+
 common/Rendering/Textures/Texture.o: common/Rendering/Textures/Texture.cpp.o
 .PHONY : common/Rendering/Textures/Texture.o
 
@@ -350,6 +398,30 @@ common/Rendering/Textures/Texture.s: common/Rendering/Textures/Texture.cpp.s
 common/Rendering/Textures/Texture.cpp.s:
 	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/common/Rendering/Textures/Texture.cpp.s
 .PHONY : common/Rendering/Textures/Texture.cpp.s
+
+common/Rendering/Textures/Texture2D.o: common/Rendering/Textures/Texture2D.cpp.o
+.PHONY : common/Rendering/Textures/Texture2D.o
+
+# target to build an object file
+common/Rendering/Textures/Texture2D.cpp.o:
+	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/common/Rendering/Textures/Texture2D.cpp.o
+.PHONY : common/Rendering/Textures/Texture2D.cpp.o
+
+common/Rendering/Textures/Texture2D.i: common/Rendering/Textures/Texture2D.cpp.i
+.PHONY : common/Rendering/Textures/Texture2D.i
+
+# target to preprocess a source file
+common/Rendering/Textures/Texture2D.cpp.i:
+	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/common/Rendering/Textures/Texture2D.cpp.i
+.PHONY : common/Rendering/Textures/Texture2D.cpp.i
+
+common/Rendering/Textures/Texture2D.s: common/Rendering/Textures/Texture2D.cpp.s
+.PHONY : common/Rendering/Textures/Texture2D.s
+
+# target to generate assembly for a file
+common/Rendering/Textures/Texture2D.cpp.s:
+	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/common/Rendering/Textures/Texture2D.cpp.s
+.PHONY : common/Rendering/Textures/Texture2D.cpp.s
 
 common/Scene/Camera/Camera.o: common/Scene/Camera/Camera.cpp.o
 .PHONY : common/Scene/Camera/Camera.o
@@ -597,15 +669,24 @@ help:
 	@echo "... common/Rendering/Shaders/BlinnPhongShader.o"
 	@echo "... common/Rendering/Shaders/BlinnPhongShader.i"
 	@echo "... common/Rendering/Shaders/BlinnPhongShader.s"
+	@echo "... common/Rendering/Shaders/CubeMapShader.o"
+	@echo "... common/Rendering/Shaders/CubeMapShader.i"
+	@echo "... common/Rendering/Shaders/CubeMapShader.s"
 	@echo "... common/Rendering/Shaders/EpicShader.o"
 	@echo "... common/Rendering/Shaders/EpicShader.i"
 	@echo "... common/Rendering/Shaders/EpicShader.s"
 	@echo "... common/Rendering/Shaders/ShaderProgram.o"
 	@echo "... common/Rendering/Shaders/ShaderProgram.i"
 	@echo "... common/Rendering/Shaders/ShaderProgram.s"
+	@echo "... common/Rendering/Textures/CubeMapTexture.o"
+	@echo "... common/Rendering/Textures/CubeMapTexture.i"
+	@echo "... common/Rendering/Textures/CubeMapTexture.s"
 	@echo "... common/Rendering/Textures/Texture.o"
 	@echo "... common/Rendering/Textures/Texture.i"
 	@echo "... common/Rendering/Textures/Texture.s"
+	@echo "... common/Rendering/Textures/Texture2D.o"
+	@echo "... common/Rendering/Textures/Texture2D.i"
+	@echo "... common/Rendering/Textures/Texture2D.s"
 	@echo "... common/Scene/Camera/Camera.o"
 	@echo "... common/Scene/Camera/Camera.i"
 	@echo "... common/Scene/Camera/Camera.s"

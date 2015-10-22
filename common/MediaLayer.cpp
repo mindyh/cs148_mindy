@@ -99,6 +99,7 @@ void MediaLayer::InitializeOpenGL()
 
     OGL_CALL(glEnable(GL_CULL_FACE));
     OGL_CALL(glCullFace(GL_BACK));
+    OGL_CALL(glEnable(GL_TEXTURE_CUBE_MAP_SEAMLESS));
 
     OGL_CALL(glClearColor(0.0f, 0.0f, 0.0f, 1.0f));
 }
