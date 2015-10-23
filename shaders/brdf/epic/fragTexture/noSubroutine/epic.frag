@@ -16,9 +16,11 @@ uniform InputMaterial {
 struct EpicLightProperties {
     float light_radius;
     vec4 light_color;
+    vec4 point_position;
+
     vec4 sky_color;
     vec4 ground_color;
-    vec4 point_position;
+    
     vec4 forward_direction;
 };
 
@@ -48,7 +50,6 @@ vec4 calcBRDF(vec4 worldPosition, vec3 worldNormal, vec4 L, vec3 light_color, bo
 
     // Direction from the surface to the camera
     vec4 V = normalize(cameraPosition - worldPosition);
-
     // Direction of maximum highlights (see paper!)
     vec4 H = normalize(L + V);
 
@@ -76,7 +77,6 @@ vec4 calcBRDF(vec4 worldPosition, vec3 worldNormal, vec4 L, vec3 light_color, bo
         // specular
         s = (D * F * G) / (4.0 * dot(N, L) * dot(N, V));
     }
-
     if (is_affected_by_light)
         return vec4(light_color * clamp(dot(N, L), 0, 1) * (d + s), 1.f);
     else 
@@ -113,7 +113,7 @@ vec4 pointLightSubroutine(vec4 worldPosition, vec3 worldNormal, bool is_affected
 
 vec4 globalLightSubroutine(vec4 worldPosition, vec3 worldNormal)
 {
-    return vec4(0.1, 0.1, 0.1, 0.1f);
+    return vec4(0);
 }
 
 float AttenuateLight(vec4 worldPosition)
