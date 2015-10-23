@@ -67,6 +67,8 @@ public:
 
     virtual void SetLight(bool inLight);
 
+    virtual bool IsAffectedByLight(const class Light* light) const;
+    
     /*! \brief Corresponds to the texture unit that we want to bind the texture to.
      *
      *  We specify the active texture unit using <a href="https://www.opengl.org/sdk/docs/man/html/glActiveTexture.xhtml">glActiveTexture</a>. The texture unit 

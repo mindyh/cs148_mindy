@@ -2,6 +2,9 @@
 #include "common/Rendering/ForwardRenderer.h"
 #include "FreeImage.h"
 
+#undef ASSIGNMENT
+#define ASSIGNMENT 4
+
 #if ASSIGNMENT == 1
 #include "assignment1/Assignment1.h"
 #define APPLICATION Assignment1

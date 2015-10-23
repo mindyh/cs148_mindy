@@ -53,9 +53,9 @@ void EpicShader::SetupShaderLighting(const Light* light) const
         switch(light->GetLightType()) {
             case Light::LightType::POINT:
                 SetShaderUniform("lightingType", static_cast<int>(Light::LightType::POINT));
-                SetShaderUniform(light->GetName() + ".light_color", lightProperty->light_color);
-                SetShaderUniform(light->GetName() + ".point_position", lightProperty->point_position);
-                SetShaderUniform(light->GetName() + ".light_radius", lightProperty->light_radius);
+                SetShaderUniform("pointLight.light_color", lightProperty->light_color);
+                SetShaderUniform("pointLight.point_position", lightProperty->point_position);
+                SetShaderUniform("pointLight.light_radius", lightProperty->light_radius);
                 break;
             case Light::LightType::DIRECTIONAL:
                 SetShaderUniform("lightingType", static_cast<int>(Light::LightType::DIRECTIONAL));
@@ -72,7 +72,8 @@ void EpicShader::SetupShaderLighting(const Light* light) const
                 std::cerr << "WARNING: Light type is not supported. Defaulting to global light. Your output may look wrong. -- Ignoring: " << static_cast<int>(light->GetLightType()) << std::endl;
                 SetShaderUniform("lightingType", static_cast<int>(Light::LightType::GLOBAL));
                 break;
-        }
+	}
+        light->SetupShaderUniforms(this);
     }
     UpdateAttenuationUniforms(light);
 }
@@ -93,9 +94,6 @@ void EpicShader::UpdateMaterialBlock() const
         OGL_CALL(glUniformBlockBinding(shaderProgram, materialBlockLocation, MATERIAL_BINDING_POINT));
         OGL_CALL(glBindBuffer(GL_UNIFORM_BUFFER, 0));
     }
-
-    // While we're here, also setup the textures too.
-    SetShaderUniform("diffuseTexture", static_cast<int>(TextureSlots::DIFFUSE));
 
     StopUseShader();
 }
@@ -124,6 +122,9 @@ void EpicShader::SetupShaderMaterials() const
     }
     assert(diffuseTexture);
     diffuseTexture->BeginRender(static_cast<int>(TextureSlots::DIFFUSE));
+
+    // While we're here, also setup the textures too.
+    SetShaderUniform("diffuseTexture", static_cast<int>(TextureSlots::DIFFUSE));
 }
 
 void EpicShader::SetupShaderCamera(const class Camera* camera) const
@@ -167,24 +168,12 @@ void EpicShader::LoadMaterialFromAssimp(std::shared_ptr<aiMaterial> assimpMateri
         return;
     }
 
-    // assimpMaterial->Get(AI_MATKEY_COLOR_DIFFUSE, glm::value_ptr(diffuse), nullptr);
-    // assimpMaterial->Get(AI_MATKEY_COLOR_SPECULAR, glm::value_ptr(specular), nullptr);
-    // assimpMaterial->Get(AI_MATKEY_SHININESS, &shininess, nullptr);
-    // assimpMaterial->Get(AI_MATKEY_COLOR_AMBIENT, glm::value_ptr(ambient), nullptr);
-
-    // if (assimpMaterial->GetTextureCount(aiTextureType_DIFFUSE)) {
-    //     aiString aiDiffusePath;
-    //     assimpMaterial->GetTexture(aiTextureType_DIFFUSE, 0, &aiDiffusePath);
-    //     std::string diffusePath(aiDiffusePath.C_Str());
-    //     SetTexture(TextureSlots::DIFFUSE, TextureLoader::LoadTexture(diffusePath));
-    // }
-
-    // if (assimpMaterial->GetTextureCount(aiTextureType_SPECULAR)) {
-    //     aiString aiSpecularPath;
-    //     assimpMaterial->GetTexture(aiTextureType_SPECULAR, 0, &aiSpecularPath);
-    //     std::string specularPath(aiSpecularPath.C_Str());
-    //     SetTexture(TextureSlots::SPECULAR, TextureLoader::LoadTexture(specularPath));
-    // }
+    if (assimpMaterial->GetTextureCount(aiTextureType_DIFFUSE)) {
+        aiString aiDiffusePath;
+        assimpMaterial->GetTexture(aiTextureType_DIFFUSE, 0, &aiDiffusePath);
+        std::string diffusePath(aiDiffusePath.C_Str());
+        SetTexture(TextureSlots::DIFFUSE, TextureLoader::LoadTexture(diffusePath));
+    }
 
     UpdateMaterialBlock();
 }

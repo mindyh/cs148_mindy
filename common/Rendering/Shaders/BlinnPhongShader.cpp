@@ -129,6 +129,7 @@ void BlinnPhongShader::SetupShaderMaterials() const
     specularTexture->BeginRender(static_cast<int>(TextureSlots::SPECULAR));
     
     if (textureSlotMapping.find(TextureSlots::NORMAL) != textureSlotMapping.end()) {
+        std::cout << "found normal" << std::endl;
         const Texture* normalTexture = textureSlotMapping.at(TextureSlots::NORMAL).get();
         normalTexture->BeginRender(static_cast<int>(TextureSlots::NORMAL));
         SetShaderUniform("useNormalTexture", (int)true);
@@ -218,4 +219,9 @@ void BlinnPhongShader::LoadMaterialFromAssimp(std::shared_ptr<aiMaterial> assimp
 void BlinnPhongShader::SetMaxDisplacement(float input)
 {
     maxDisplacement = input;
+}
+
+bool BlinnPhongShader::IsAffectedByLight(const class Light* light) const
+{
+    return is_affected_by_light_ || (light == nullptr);
 }
