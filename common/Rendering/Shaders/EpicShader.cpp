@@ -6,25 +6,26 @@
 #include "common/Utility/Texture/TextureLoader.h"
 #include "assimp/material.h"
 
-std::array<const char*, 4> EpicShader::MATERIAL_PROPERTY_NAMES = {
+std::array<const char*, 5> EpicShader::MATERIAL_PROPERTY_NAMES = {
     "InputMaterial.matMetallic", 
     "InputMaterial.matRoughness", 
     "InputMaterial.matSpecular",
-    "InputMaterial.matLight"
+    "InputMaterial.matLight",
+    "InputMaterial.matDiffuse"
 };
 
 const int EpicShader::MATERIAL_BINDING_POINT = 0;
 
 EpicShader::EpicShader(const std::unordered_map<GLenum, std::string>& inputShaders, GLenum lightingStage):
-    ShaderProgram(inputShaders), metallic(1.f), roughness(1.f), specular(glm::vec3(0.f), 1.f), is_affected_by_light_(true), 
-    materialBlockLocation(0), materialBlockSize(0), materialBuffer(0),
+    ShaderProgram(inputShaders), metallic(1.f), roughness(1.f), specular(glm::vec3(0.f), 1.f), diffuse(glm::vec3(0.f), 1.f),
+    is_affected_by_light_(true), materialBlockLocation(0), materialBlockSize(0), materialBuffer(0),
     lightingShaderStage(lightingStage)
 {
     if (!shaderProgram) {
         return;
     }
 
-    SetupUniformBlock<4>("InputMaterial", MATERIAL_PROPERTY_NAMES, materialIndices, materialOffsets, materialStorage, materialBlockLocation, materialBlockSize, materialBuffer);
+    SetupUniformBlock<5>("InputMaterial", MATERIAL_PROPERTY_NAMES, materialIndices, materialOffsets, materialStorage, materialBlockLocation, materialBlockSize, materialBuffer);
     UpdateMaterialBlock();
 
     (void)lightingShaderStage;
@@ -86,6 +87,7 @@ void EpicShader::UpdateMaterialBlock() const
     memcpy((void*)(materialStorage.data() + materialOffsets[1]), &roughness, sizeof(float));
     memcpy((void*)(materialStorage.data() + materialOffsets[2]), glm::value_ptr(specular), sizeof(glm::vec4));
     memcpy((void*)(materialStorage.data() + materialOffsets[3]), &is_affected_by_light_, sizeof(bool));
+    memcpy((void*)(materialStorage.data() + materialOffsets[4]), glm::value_ptr(diffuse), sizeof(glm::vec4));
 
     if (materialBuffer && materialBlockLocation != GL_INVALID_INDEX) {
         OGL_CALL(glBindBuffer(GL_UNIFORM_BUFFER, materialBuffer));
@@ -151,6 +153,13 @@ void EpicShader::SetSpecular(glm::vec4 inSpecular)
     UpdateMaterialBlock();
 }
 
+
+void EpicShader::SetDiffuse(glm::vec4 inDiffuse) 
+{ 
+    diffuse = inDiffuse; 
+    UpdateMaterialBlock();
+}
+
 void EpicShader::SetLight(bool inLight) 
 { 
     is_affected_by_light_ = inLight; 
@@ -168,10 +177,14 @@ void EpicShader::LoadMaterialFromAssimp(std::shared_ptr<aiMaterial> assimpMateri
         return;
     }
 
+    // for mtl files with only colors...
+    assimpMaterial->Get(AI_MATKEY_COLOR_DIFFUSE, glm::value_ptr(diffuse), nullptr);
+
     if (assimpMaterial->GetTextureCount(aiTextureType_DIFFUSE)) {
         aiString aiDiffusePath;
         assimpMaterial->GetTexture(aiTextureType_DIFFUSE, 0, &aiDiffusePath);
         std::string diffusePath(aiDiffusePath.C_Str());
+        std::cout << diffusePath << std::endl;
         SetTexture(TextureSlots::DIFFUSE, TextureLoader::LoadTexture(diffusePath));
     }
 

@@ -62,6 +62,7 @@ public:
      *  Immediately calls UpdateMaterialBlock() to store the new data into the OpenGL buffer. 
      */
     virtual void SetSpecular(glm::vec4 inSpecular);
+    virtual void SetDiffuse(glm::vec4 inDiffuse);
 
     virtual void SetLight(bool inLight);
 
@@ -92,15 +93,16 @@ protected:
     float metallic;
     float roughness;
     glm::vec4 specular;
+    glm::vec4 diffuse;
     bool is_affected_by_light_;
 
     // Material Bindings into the Shader
-    static std::array<const char*, 4> MATERIAL_PROPERTY_NAMES;
+    static std::array<const char*, 5> MATERIAL_PROPERTY_NAMES;
     static const int MATERIAL_BINDING_POINT;
     GLuint materialBlockLocation;
     GLint materialBlockSize;
-    std::array<GLuint, 4> materialIndices;
-    std::array<GLint, 4> materialOffsets;
+    std::array<GLuint, 5> materialIndices;
+    std::array<GLint, 5> materialOffsets;
     GLuint materialBuffer;
     std::vector<GLubyte> materialStorage;
 

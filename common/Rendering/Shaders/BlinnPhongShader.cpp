@@ -205,7 +205,6 @@ void BlinnPhongShader::LoadMaterialFromAssimp(std::shared_ptr<aiMaterial> assimp
         assimpMaterial->GetTexture(aiTextureType_DIFFUSE, 0, &aiDiffusePath);
         std::string diffusePath(aiDiffusePath.C_Str());
         SetTexture(TextureSlots::DIFFUSE, TextureLoader::LoadTexture(diffusePath));
-        // SetTexture(TextureSlots::DIFFUSE, TextureLoader::LoadTexture("check.jpg"));
     }
 
     if (assimpMaterial->GetTextureCount(aiTextureType_SPECULAR)) {

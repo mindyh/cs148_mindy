@@ -11,6 +11,7 @@ uniform InputMaterial {
     float matRoughness;
     vec4 matSpecular;
     bool matLight;
+    vec4 matDiffuse;
 } material;
 
 struct EpicLightProperties {
@@ -48,33 +49,37 @@ vec4 calcBRDF(vec4 worldPosition, vec3 worldNormal, vec4 L, vec3 light_color, bo
      // Normal to the surface
     vec4 N = vec4(normalize(worldNormal), 0.f);
 
+    vec3 color = material.matDiffuse.xyz != vec3(0) ? material.matDiffuse.xyz : texture(diffuseTexture, fragmentUV).xyz;
+
     // Direction from the surface to the camera
     vec4 V = normalize(cameraPosition - worldPosition);
     // Direction of maximum highlights (see paper!)
     vec4 H = normalize(L + V);
 
     // diffuse reflection
-    vec3 d = (1 - material.matMetallic) * texture(diffuseTexture, fragmentUV).xyz / PI;
+    vec3 d = (1 - material.matMetallic) * color / PI;
 
     // specular
     vec3 s = vec3(0.f); 
     if (lightingType != HEMISPHERE) { 
         // D
         float alphaSquared = pow(material.matRoughness, 4);
-        float D_denom = dot(N, H) * dot(N, H) * (alphaSquared - 1) + 1;
+        float D_denom = clamp(dot(N, H), 0,1) * clamp(dot(N, H), 0,1) * (alphaSquared - 1) + 1;
         float D = alphaSquared / (PI * D_denom * D_denom);
 
         // F
-        vec3 c_spec = mix(0.08 * material.matSpecular.xyz, texture(diffuseTexture, fragmentUV).xyz, material.matMetallic);
+        vec3 c_spec = mix(0.08 * material.matSpecular.xyz, color, material.matMetallic);
+        // clamping this line turns everything dark
         vec3 F = c_spec + (1 - c_spec) * pow(2, (-5.55473 * dot(V, H) - 6.98316)*dot(V,H)); 
 
         // G
         float k = (material.matRoughness + 1) * (material.matRoughness + 1) / 8.0;
-        float G_L = dot(N, L) / (dot(N, L) * (1 - k) + k);
-        float G_V = dot(N, V) / (dot(N, V) * (1 - k) + k);
+        float G_L = clamp(dot(N, L), 0,1) / (clamp(dot(N, L), 0,1) * (1 - k) + k);
+        float G_V = clamp(dot(N, V), 0,1) / (clamp(dot(N, V), 0,1) * (1 - k) + k);
         float G = G_L * G_V;
 
         // specular
+        // clamping this line turns everything dark
         s = (D * F * G) / (4.0 * dot(N, L) * dot(N, V));
     }
     if (is_affected_by_light)

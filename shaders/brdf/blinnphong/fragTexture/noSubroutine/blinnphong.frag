@@ -66,7 +66,7 @@ vec4 pointLightSubroutine(vec4 worldPosition, vec3 worldNormal, bool is_affected
     vec4 specularColor = s * genericLight.specularColor * material.matSpecular * texture(specularTexture, fragmentUV);
 
     if (is_affected_by_light)
-        return diffuseColor + specularColor;
+        return diffuseColor + specularColor;  
     else 
         return texture(diffuseTexture, fragmentUV);
 }
