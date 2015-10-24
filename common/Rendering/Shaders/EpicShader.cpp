@@ -177,15 +177,14 @@ void EpicShader::LoadMaterialFromAssimp(std::shared_ptr<aiMaterial> assimpMateri
         return;
     }
 
-    // for mtl files with only colors...
-    assimpMaterial->Get(AI_MATKEY_COLOR_DIFFUSE, glm::value_ptr(diffuse), nullptr);
-
     if (assimpMaterial->GetTextureCount(aiTextureType_DIFFUSE)) {
         aiString aiDiffusePath;
         assimpMaterial->GetTexture(aiTextureType_DIFFUSE, 0, &aiDiffusePath);
         std::string diffusePath(aiDiffusePath.C_Str());
-        std::cout << diffusePath << std::endl;
         SetTexture(TextureSlots::DIFFUSE, TextureLoader::LoadTexture(diffusePath));
+    } else {
+        // for mtl files with only colors...
+        assimpMaterial->Get(AI_MATKEY_COLOR_DIFFUSE, glm::value_ptr(diffuse), nullptr);
     }
 
     UpdateMaterialBlock();
