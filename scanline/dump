@@ -1,0 +1,12 @@
+./common/Rendering/ForwardRenderer.cpp:                if (shaderToUse->IsAffectedByLight(lightObject)) {
+./common/Rendering/Shaders/BlinnPhongShader.cpp:bool BlinnPhongShader::IsAffectedByLight(const class Light* light) const
+./common/Rendering/Shaders/ShaderProgram.h:    virtual bool IsAffectedByLight(const class Light* light) const { return true;  }
+./common/Rendering/Shaders/CubeMapShader.cpp:bool CubeMapShader::IsAffectedByLight(const class Light* light) const
+./common/Rendering/Shaders/BlinnPhongShader.h:    virtual bool IsAffectedByLight(const class Light* light) const;
+./common/Rendering/Shaders/CubeMapShader.h:    virtual bool IsAffectedByLight(const class Light* light) const;
+Binary file ./build/unix/Release/cs148opengl4 matches
+Binary file ./build/unix/Release/CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/ShaderProgram.cpp.o matches
+Binary file ./build/unix/Release/CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o matches
+Binary file ./build/unix/Release/CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/BlinnPhongShader.cpp.o matches
+Binary file ./build/unix/Release/CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/CubeMapShader.cpp.o matches
+Binary file ./build/unix/Release/CMakeFiles/cs148opengl4.dir/common/Rendering/ForwardRenderer.cpp.o matches

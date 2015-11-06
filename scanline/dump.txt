@@ -1,0 +1,392 @@
+Binary file ./assets/Thor/Thor_D.tga matches
+./assignment4/Assignment4.h:    void MakeEpicMesh(std::string file_name, std::string texture_name, bool isLit = true);
+./assignment4/Assignment4.cpp:void Assignment4::MakeEpicMesh(std::string file_name, std::string texture_name, bool isLit) {
+./assignment4/Assignment4.cpp:        { GL_VERTEX_SHADER, "brdf/epic/fragTexture/noSubroutine/epic.vert" },
+./assignment4/Assignment4.cpp:        { GL_FRAGMENT_SHADER, "brdf/epic/fragTexture/noSubroutine/epic.frag" }
+./assignment4/Assignment4.cpp:    std::shared_ptr<EpicShader> shader = std::make_shared<EpicShader>(shaderSpec, GL_FRAGMENT_SHADER);
+./assignment4/Assignment4.cpp:    shader->SetTexture(EpicShader::TextureSlots::DIFFUSE, TextureLoader::LoadTexture(texture_name));
+./external/assimp/doc/dox.h:   // handle epic failure here
+./external/assimp/doc/dox.h:   // handle epic failure here
+Binary file ./external/glew/distrib/windows/lib/x86/glew32s.lib matches
+Binary file ./external/glew/distrib/windows/lib/x64/glew32s.lib matches
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:Private Declare Function OleCreatePictureIndirect Lib "oleaut32.dll" ( _
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' This function is primarily used by the function 'SavePictureEx'.
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:' OlePicture conversion functions
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:Public Function FreeImage_GetOlePicture(ByVal Bitmap As Long, _
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' This function creates a VB Picture object (OlePicture) from a FreeImage DIB.
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' after the OlePicture has been created, so you can easily "switch" from a
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:         Call OleCreatePictureIndirect(tPicDesc, tGuid, True, cPictureDisp)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:         Set FreeImage_GetOlePicture = cPictureDisp
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:Public Function FreeImage_GetOlePictureIcon(ByVal hIcon As Long) As IPicture
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' This function creates a VB Picture object (OlePicture) of type picTypeIcon
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' after the OlePicture has been created, so you can easiely "switch" from a
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:      Call OleCreatePictureIndirect(tPicDesc, tGuid, True, cPictureDisp)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:      Set FreeImage_GetOlePictureIcon = cPictureDisp
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:Public Function FreeImage_GetOlePictureThumbnail(ByVal Bitmap As Long, _
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' This function is a IOlePicture aware wrapper for FreeImage_MakeThumbnail(). It
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' after the OlePicture has been created, so you can easiely "switch" from a
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:      Set FreeImage_GetOlePictureThumbnail = FreeImage_GetOlePicture(hDIBThumbnail, hDC, True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:Public Function FreeImage_CreateFromOlePicture(ByRef Picture As IPicture) As Long
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' Creates a FreeImage DIB from a VB Picture object (OlePicture). This function
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:                  FreeImage_CreateFromOlePicture = hDIB
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' 'FreeImage_CreateFromOlePicture()' when working with DCs and BITMAPs directly
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' FreeImage_Load() or 'FreeImage_CreateFromOlePicture()' when working with
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' function 'pGetIOlePictureFromContainer'.
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:      FreeImage_CreateFromImageContainer = FreeImage_CreateFromOlePicture( _
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:                            pGetIOlePictureFromContainer(Container, _
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' after the OlePicture has been created, so you can easiely "switch" from a
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' by FreeImage_CreateFromOlePicture. After resizing the Bitmap it is
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:         hDIB = FreeImage_CreateFromOlePicture(Control.Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:            Set Control.Picture = FreeImage_GetOlePicture(hDIB, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:      Set LoadPictureEx = FreeImage_GetOlePicture(hDIB, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:Public Function SavePictureEx(ByRef Picture As IPicture, _
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' This function is an extended version of the VB method 'SavePicture'. As
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:      hDIB = FreeImage_CreateFromOlePicture(Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:         SavePictureEx = FreeImage_SaveEx(hDIB, Filename, Format, Options, _
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' This function is an extended version of the VB method 'SavePicture'. As
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' 'SavePictureEx()' and 'FreeImage_CreateFromImageContainer()'. Basically this
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' function is identical to 'SavePictureEx' expect that is does not take a
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture (IPicture) object but a VB image hosting container control.
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   Call SavePictureEx(pGetIOlePictureFromContainer(Container, IncludeDrawings), _
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:' OlePicture aware toolkit, rescale and conversion functions
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture based wrapper for wrapper function FreeImage_RescaleEx()
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   hDIB = FreeImage_CreateFromOlePicture(Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:      Set FreeImage_RescaleIOP = FreeImage_GetOlePicture(hDIB, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture based wrapper for wrapper function FreeImage_MakeThumbnail()
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   hDIB = FreeImage_CreateFromOlePicture(Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:         Set FreeImage_MakeThumbnailIOP = FreeImage_GetOlePicture(hDIBThumbnail, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture based wrapper for wrapper function FreeImage_ConvertColorDepth()
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   hDIB = FreeImage_CreateFromOlePicture(Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:      Set FreeImage_ConvertColorDepthIOP = FreeImage_GetOlePicture(hDIB, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture based wrapper for wrapper function FreeImage_ColorQuantizeEx()
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   hDIB = FreeImage_CreateFromOlePicture(Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:      Set FreeImage_ColorQuantizeExIOP = FreeImage_GetOlePicture(hDIB, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture based wrapper for FreeImage function FreeImage_RotateClassic()
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   hDIB = FreeImage_CreateFromOlePicture(Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:         Set FreeImage_RotateClassicIOP = FreeImage_GetOlePicture(hDIBNew, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture based wrapper for FreeImage function FreeImage_Rotate()
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   hDIB = FreeImage_CreateFromOlePicture(Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:         Set FreeImage_RotateIOP = FreeImage_GetOlePicture(hDIBNew, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture based wrapper for FreeImage function FreeImage_RotateEx()
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   hDIB = FreeImage_CreateFromOlePicture(Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:         Set FreeImage_RotateExIOP = FreeImage_GetOlePicture(hDIBNew, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture based wrapper for FreeImage function FreeImage_FlipHorizontal()
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   hDIB = FreeImage_CreateFromOlePicture(Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:      Set FreeImage_FlipHorizontalIOP = FreeImage_GetOlePicture(hDIB, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture based wrapper for FreeImage function FreeImage_FlipVertical()
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   hDIB = FreeImage_CreateFromOlePicture(Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:      Set FreeImage_FlipVerticalIOP = FreeImage_GetOlePicture(hDIB, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture based wrapper for FreeImage function FreeImage_AdjustCurve()
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   hDIB = FreeImage_CreateFromOlePicture(Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:         Set FreeImage_AdjustCurveIOP = FreeImage_GetOlePicture(hDIB, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture based wrapper for FreeImage function FreeImage_AdjustGamma()
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   hDIB = FreeImage_CreateFromOlePicture(Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:         Set FreeImage_AdjustGammaIOP = FreeImage_GetOlePicture(hDIB, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture based wrapper for FreeImage function FreeImage_AdjustBrightness()
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   hDIB = FreeImage_CreateFromOlePicture(Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:         Set FreeImage_AdjustBrightnessIOP = FreeImage_GetOlePicture(hDIB, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture based wrapper for FreeImage function FreeImage_AdjustContrast()
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   hDIB = FreeImage_CreateFromOlePicture(Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:         Set FreeImage_AdjustContrastIOP = FreeImage_GetOlePicture(hDIB, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture based wrapper for FreeImage function FreeImage_Invert()
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   hDIB = FreeImage_CreateFromOlePicture(Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:      Set FreeImage_InvertIOP = FreeImage_GetOlePicture(hDIB, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture based wrapper for FreeImage function FreeImage_GetChannel()
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   hDIB = FreeImage_CreateFromOlePicture(Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:         Set FreeImage_GetChannelIOP = FreeImage_GetOlePicture(hDIBNew, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture based wrapper for FreeImage function FreeImage_SetChannel()
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   hDIB = FreeImage_CreateFromOlePicture(Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:            Set FreeImage_SetChannelIOP = FreeImage_GetOlePicture(hDIB, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture based wrapper for FreeImage function FreeImage_Copy()
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   hDIB = FreeImage_CreateFromOlePicture(Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:      Set FreeImage_CopyIOP = FreeImage_GetOlePicture(hDIBNew, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture based wrapper for FreeImage function FreeImage_Paste()
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   hDIBDst = FreeImage_CreateFromOlePicture(PictureDst)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:      hDIBSrc = FreeImage_CreateFromOlePicture(PictureSrc)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:            Set FreeImage_PasteIOP = FreeImage_GetOlePicture(hDIBDst, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' IOlePicture based wrapper for FreeImage function FreeImage_Composite()
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   hDIB = FreeImage_CreateFromOlePicture(Picture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:      hDIBbg = FreeImage_CreateFromOlePicture(BackgroundPicture)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:         Set FreeImage_CompositeIOP = FreeImage_GetOlePicture(hDIBResult, , True)
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:' Private IOlePicture related helper functions
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:Private Function pGetIOlePictureFromContainer(ByRef Container As Object, _
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:   ' Returns a VB IOlePicture object (IPicture) from a VB image hosting control.
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:            Set pGetIOlePictureFromContainer = Container.Image
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:            Set pGetIOlePictureFromContainer = Container.Picture
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:            Set pGetIOlePictureFromContainer = Container.Image
+./external/freeimage/Wrapper/VB6/mfreeimage/MFreeImage.bas:            Set pGetIOlePictureFromContainer = Container.Picture
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:- [Carsten Klein] removed parameter 'bUnloadSource' from function FreeImage_GetOlePictureIcon(): an hIcon should not be destroyed if OleCreatePictureIndirect() is called with fOwn = True.
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:! [Carsten Klein] refactored FreeImage_GetOlePicture(): now relies on FreeImage_GetBitmap().
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:* [Carsten Klein] fixed a memory leak in wrapper function SavePictureEx(). Thanks to Roogames for reporting that bug.
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:! [Carsten Klein] changed return type of wrapper function SavePictureEx() to Boolean.
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:+ [Carsten Klein] added wrapper function FreeImage_SaveEx() which brings all the features, as there are inline size- and color conversion and format guessing, so far only known from SavePictureEx() for DIBs.
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:! [Carsten Klein] changed wrapper function SavePictureEx(): now this is only a thin wrapper for function FreeImage_SaveEx().
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:*                 fixed function FreeImage_CreateFromOLEPicture()
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:+ [Carsten Klein] added function for FreeImage_GetOlePictureThumbnail()
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:+ [Carsten Klein] added function FreeImage_GetOlePictureIcon(): returns a VB Picture object of type vbPicTypeIcon
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:+ [Carsten Klein] added private function pGetIOlePictureFromContainer(): used to get IPicture from image hosting control (Form, PictureBox) including custom drawings
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:+ [Carsten Klein] added wrapper function SaveImageContainerEx(): derivate of wrapper function 'SavePictureEx()': saves content of image hosting control (Form, PictureBox) including custom drawings
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:! [Carsten Klein] changed/extended signature of wrapper function SavePictureEx(): now includes a parameter 'ColorDepth'
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:+ [Carsten Klein] added error handling capabilities to wrapper function SavePictureEx()
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:+ [Carsten Klein] added/updated inline documentation of wrapper function SavePictureEx()
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:+ [Carsten Klein] added comments to IOlePicture aware toolkit and conversion functions
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:+ [Carsten Klein] added IOlePicture based wrapper function FreeImage_ConvertColorDepthIOP()
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:+ [Carsten Klein] added IOlePicture based wrapper functions for FreeImage_RescaleIOP():
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:+ [Carsten Klein] added IOlePicture based wrapper function FreeImage_RescaleIOP()
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:* [Carsten Klein] fixed a bug in FreeImage_GetOlePicture(): now OlePictures returned through IPicture may be used directly by other functions accepting IPicture types without any assignment to IPictureDisp
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:+ [Carsten Klein] added IOlePicture based wrapper functions for FreeImage toolkit functions:
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:+ [Carsten Klein] added optional parameter 'InPercent' to function SavePictureEx()
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:!                 implemented the capability to resize the image on saving in function SavePictureEx()
+./external/freeimage/Wrapper/VB6/mfreeimage/WhatsNew_VB.txt:! [Carsten Klein] changed name of parameter 'bUnloadDIB' to 'bUnloadSource' of function FreeImage_GetOlePicture()
+./external/freeimage/Source/LibOpenJPEG/openjpeg.h: *							as depicted in opj_write_tile.
+./assignment3/Assignment3.cpp:        { GL_VERTEX_SHADER, "brdf/epic/frag/noSubroutine/epic.vert" },
+./assignment3/Assignment3.cpp:        { GL_FRAGMENT_SHADER, "brdf/epic/frag/noSubroutine/epic.frag"}
+./assignment3/Assignment3.cpp:    std::shared_ptr<EpicShader> shader = std::make_shared<EpicShader>(shaderSpec, GL_FRAGMENT_SHADER);
+./assignment3/Assignment3.cpp:    std::shared_ptr<EpicShader> groundShader = std::make_shared<EpicShader>(shaderSpec, GL_FRAGMENT_SHADER);
+./assignment3/Assignment3.cpp:        { GL_VERTEX_SHADER, "brdf/epic/frag/noSubroutine/epic.vert" },
+./assignment3/Assignment3.cpp:        { GL_FRAGMENT_SHADER, "brdf/epic/frag/noSubroutine/epic.frag"}
+./assignment3/Assignment3.cpp:    std::shared_ptr<EpicShader> shader = std::make_shared<EpicShader>(shaderSpec, GL_FRAGMENT_SHADER);
+./assignment3/Assignment3.cpp:    std::unique_ptr<EpicLightProperties> pointLightProperties = EpicShader::CreateLightProperties();
+./assignment3/Assignment3.cpp:    std::unique_ptr<EpicLightProperties> directionalLightProperties = EpicShader::CreateLightProperties();
+./assignment3/Assignment3.cpp:    std::unique_ptr<EpicLightProperties> hemisphereLightProperties = EpicShader::CreateLightProperties();
+./common/core.h:#include "common/Rendering/Shaders/EpicShader.h"
+./common/Scene/Light/LightProperties.h:    // epic
+./common/Rendering/Shaders/EpicShader.cpp:#include "common/Rendering/Shaders/EpicShader.h"
+./common/Rendering/Shaders/EpicShader.cpp:std::array<const char*, 4> EpicShader::MATERIAL_PROPERTY_NAMES = {
+./common/Rendering/Shaders/EpicShader.cpp:const int EpicShader::MATERIAL_BINDING_POINT = 0;
+./common/Rendering/Shaders/EpicShader.cpp:EpicShader::EpicShader(const std::unordered_map<GLenum, std::string>& inputShaders, GLenum lightingStage):
+./common/Rendering/Shaders/EpicShader.cpp:EpicShader::~EpicShader()
+./common/Rendering/Shaders/EpicShader.cpp:void EpicShader::SetupShaderLighting(const Light* light) const
+./common/Rendering/Shaders/EpicShader.cpp:void EpicShader::UpdateMaterialBlock() const
+./common/Rendering/Shaders/EpicShader.cpp:void EpicShader::UpdateAttenuationUniforms(const Light* light) const
+./common/Rendering/Shaders/EpicShader.cpp:void EpicShader::SetupShaderMaterials() const
+./common/Rendering/Shaders/EpicShader.cpp:void EpicShader::SetupShaderCamera(const class Camera* camera) const
+./common/Rendering/Shaders/EpicShader.cpp:void EpicShader::SetMetallic(float inMetallic) 
+./common/Rendering/Shaders/EpicShader.cpp:void EpicShader::SetRoughness(float inRoughness) 
+./common/Rendering/Shaders/EpicShader.cpp:void EpicShader::SetSpecular(glm::vec4 inSpecular) 
+./common/Rendering/Shaders/EpicShader.cpp:void EpicShader::SetLight(bool inLight) 
+./common/Rendering/Shaders/EpicShader.cpp:void EpicShader::SetTexture(TextureSlots::Type slot, std::shared_ptr<class Texture> inputTexture)
+./common/Rendering/Shaders/EpicShader.h:#ifndef __EPIC_SHADER__
+./common/Rendering/Shaders/EpicShader.h:#define __EPIC_SHADER__
+./common/Rendering/Shaders/EpicShader.h:/*! \brief The CPU Interface to the Epic shader (either or: vert or frag version or the textured version).
+./common/Rendering/Shaders/EpicShader.h:class EpicShader: public ShaderProgram
+./common/Rendering/Shaders/EpicShader.h:    /*! \brief Construcs the Epic shader object.
+./common/Rendering/Shaders/EpicShader.h:    EpicShader(const std::unordered_map<GLenum, std::string>& inputShaders, GLenum lightingStage);
+./common/Rendering/Shaders/EpicShader.h:    virtual ~EpicShader();
+Binary file ./.git/index matches
+./build/unix/Release/Makefile:common/Rendering/Shaders/EpicShader.o: common/Rendering/Shaders/EpicShader.cpp.o
+./build/unix/Release/Makefile:.PHONY : common/Rendering/Shaders/EpicShader.o
+./build/unix/Release/Makefile:common/Rendering/Shaders/EpicShader.cpp.o:
+./build/unix/Release/Makefile:	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o
+./build/unix/Release/Makefile:.PHONY : common/Rendering/Shaders/EpicShader.cpp.o
+./build/unix/Release/Makefile:common/Rendering/Shaders/EpicShader.i: common/Rendering/Shaders/EpicShader.cpp.i
+./build/unix/Release/Makefile:.PHONY : common/Rendering/Shaders/EpicShader.i
+./build/unix/Release/Makefile:common/Rendering/Shaders/EpicShader.cpp.i:
+./build/unix/Release/Makefile:	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.i
+./build/unix/Release/Makefile:.PHONY : common/Rendering/Shaders/EpicShader.cpp.i
+./build/unix/Release/Makefile:common/Rendering/Shaders/EpicShader.s: common/Rendering/Shaders/EpicShader.cpp.s
+./build/unix/Release/Makefile:.PHONY : common/Rendering/Shaders/EpicShader.s
+./build/unix/Release/Makefile:common/Rendering/Shaders/EpicShader.cpp.s:
+./build/unix/Release/Makefile:	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.s
+./build/unix/Release/Makefile:.PHONY : common/Rendering/Shaders/EpicShader.cpp.s
+./build/unix/Release/Makefile:	@echo "... common/Rendering/Shaders/EpicShader.o"
+./build/unix/Release/Makefile:	@echo "... common/Rendering/Shaders/EpicShader.i"
+./build/unix/Release/Makefile:	@echo "... common/Rendering/Shaders/EpicShader.s"
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/link.txt:/usr/bin/c++   -O3 -DNDEBUG -O3    CMakeFiles/cs148opengl4.dir/main.cpp.o CMakeFiles/cs148opengl4.dir/common/MediaLayer.cpp.o CMakeFiles/cs148opengl4.dir/common/Scene/SceneObject.cpp.o CMakeFiles/cs148opengl4.dir/common/Scene/Scene.cpp.o CMakeFiles/cs148opengl4.dir/common/Scene/Light/Light.cpp.o CMakeFiles/cs148opengl4.dir/common/Scene/Camera/PerspectiveCamera.cpp.o CMakeFiles/cs148opengl4.dir/common/Scene/Camera/Camera.cpp.o CMakeFiles/cs148opengl4.dir/common/Application.cpp.o CMakeFiles/cs148opengl4.dir/common/Rendering/ForwardRenderer.cpp.o CMakeFiles/cs148opengl4.dir/common/Rendering/Renderer.cpp.o CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/BlinnPhongShader.cpp.o CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/ShaderProgram.cpp.o CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o CMakeFiles/cs148opengl4.dir/common/Rendering/Textures/Texture.cpp.o CMakeFiles/cs148opengl4.dir/common/Rendering/RenderingObject.cpp.o CMakeFiles/cs148opengl4.dir/common/Utility/Mesh/Simple/PrimitiveCreator.cpp.o CMakeFiles/cs148opengl4.dir/common/Utility/Mesh/Loading/MeshLoader.cpp.o CMakeFiles/cs148opengl4.dir/common/Utility/Texture/TextureLoader.cpp.o CMakeFiles/cs148opengl4.dir/assignment4/Assignment4.cpp.o  -o cs148opengl4 -rdynamic -lGLU -lGL -lSM -lICE -lX11 -lXext -Wl,-Bstatic -lSDL2main -Wl,-Bdynamic -lSDL2 -lpthread -lGLEW ../../../external/assimp/distrib/unix/libassimp.so -lfreeimage -Wl,-rpath,/home/mindy/Documents/cs148/cs148opengl4/source/external/assimp/distrib/unix 
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/CXX.includecache:../../.././common/Rendering/Shaders/EpicShader.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/CXX.includecache:common/Rendering/Shaders/EpicShader.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/CXX.includecache:../../.././common/common/Rendering/Shaders/EpicShader.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/CXX.includecache:/home/mindy/Documents/cs148/cs148opengl4/source/common/Rendering/Shaders/EpicShader.cpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/CXX.includecache:common/Rendering/Shaders/EpicShader.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/CXX.includecache:/home/mindy/Documents/cs148/cs148opengl4/source/common/Rendering/Shaders/common/Rendering/Shaders/EpicShader.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.internal: ../../.././common/Rendering/Shaders/EpicShader.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.internal:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.internal: ../../.././common/Rendering/Shaders/EpicShader.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.internal: /home/mindy/Documents/cs148/cs148opengl4/source/common/Rendering/Shaders/EpicShader.cpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.internal: ../../.././common/Rendering/Shaders/EpicShader.h
+Binary file ./build/unix/Release/CMakeFiles/cs148opengl4.dir/assignment4/Assignment4.cpp.o matches
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/cmake_clean.cmake:  "CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o"
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/build.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: CMakeFiles/cs148opengl4.dir/flags.make
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/build.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../../common/Rendering/Shaders/EpicShader.cpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/build.make:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o"
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/build.make:	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o -c /home/mindy/Documents/cs148/cs148opengl4/source/common/Rendering/Shaders/EpicShader.cpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/build.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.i: cmake_force
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/build.make:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.i"
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/build.make:	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/mindy/Documents/cs148/cs148opengl4/source/common/Rendering/Shaders/EpicShader.cpp > CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.i
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/build.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.s: cmake_force
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/build.make:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.s"
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/build.make:	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/mindy/Documents/cs148/cs148opengl4/source/common/Rendering/Shaders/EpicShader.cpp -o CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.s
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/build.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o.requires:
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/build.make:.PHONY : CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o.requires
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/build.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o.provides: CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o.requires
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/build.make:	$(MAKE) -f CMakeFiles/cs148opengl4.dir/build.make CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o.provides.build
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/build.make:.PHONY : CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o.provides
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/build.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o.provides.build: CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/build.make:"CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o" \
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/build.make:cs148opengl4: CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/build.make:CMakeFiles/cs148opengl4.dir/requires: CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o.requires
+Binary file ./build/unix/Release/CMakeFiles/cs148opengl4.dir/assignment3/Assignment3.cpp.o matches
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/assignment4/Assignment4.cpp.o: ../../.././common/Rendering/Shaders/EpicShader.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././common/Rendering/Shaders/EpicShader.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././common/Rendering/Shaders/ShaderProgram.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././common/Rendering/Textures/Texture.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././common/Rendering/Textures/Texture2D.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././common/Scene/Camera/Camera.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././common/Scene/Light/Light.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././common/Scene/Light/LightProperties.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././common/Scene/SceneObject.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././common/Utility/Texture/TextureLoader.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././common/common.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/common.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/_fixes.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/_swizzle.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/_swizzle_func.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/_vectorize.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/func_common.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/func_common.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/func_exponential.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/func_exponential.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/func_geometric.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/func_geometric.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/func_integer.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/func_integer.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/func_matrix.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/func_matrix.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/func_packing.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/func_packing.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/func_trigonometric.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/func_trigonometric.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/func_vector_relational.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/func_vector_relational.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/precision.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/setup.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_float.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_half.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_half.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_int.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_mat.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_mat2x2.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_mat2x2.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_mat2x3.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_mat2x3.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_mat2x4.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_mat2x4.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_mat3x2.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_mat3x2.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_mat3x3.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_mat3x3.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_mat3x4.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_mat3x4.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_mat4x2.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_mat4x2.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_mat4x3.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_mat4x3.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_mat4x4.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_mat4x4.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_vec.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_vec1.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_vec1.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_vec2.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_vec2.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_vec3.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_vec3.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_vec4.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_vec4.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_vec4_avx.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_vec4_avx2.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/detail/type_vec4_sse2.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/exponential.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/fwd.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/geometric.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/glm.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/gtc/constants.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/gtc/constants.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/gtc/matrix_transform.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/gtc/matrix_transform.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/gtc/quaternion.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/gtc/quaternion.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/gtc/type_precision.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/gtc/type_precision.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/gtc/type_ptr.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/gtc/type_ptr.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/gtc/vec1.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/gtc/vec1.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/gtx/dual_quaternion.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/gtx/dual_quaternion.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/gtx/norm.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/gtx/norm.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/gtx/quaternion.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/gtx/string_cast.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/gtx/string_cast.inl
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/integer.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/mat2x2.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/mat2x3.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/mat2x4.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/mat3x2.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/mat3x3.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/mat3x4.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/mat4x2.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/mat4x3.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/mat4x4.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/matrix.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/packing.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/trigonometric.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/vec2.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/vec3.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/vec4.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../.././external/glm/glm/vector_relational.hpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: ../../../common/Rendering/Shaders/EpicShader.cpp
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_assert.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_atomic.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_audio.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_blendmode.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_clipboard.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_config.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_cpuinfo.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_endian.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_error.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_events.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_filesystem.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_gamecontroller.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_gesture.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_haptic.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_hints.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_joystick.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_keyboard.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_keycode.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_loadso.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_log.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_main.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_messagebox.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_mouse.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_mutex.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_pixels.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_platform.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_power.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_quit.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_rect.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_render.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_rwops.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_scancode.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_stdinc.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_surface.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_system.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_thread.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_timer.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_touch.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_version.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/SDL_video.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/begin_code.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o: /usr/include/SDL2/close_code.h
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/depend.make:CMakeFiles/cs148opengl4.dir/main.cpp.o: ../../.././common/Rendering/Shaders/EpicShader.h
+Binary file ./build/unix/Release/CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o matches
+./build/unix/Release/CMakeFiles/cs148opengl4.dir/DependInfo.cmake:  "/home/mindy/Documents/cs148/cs148opengl4/source/common/Rendering/Shaders/EpicShader.cpp" "/home/mindy/Documents/cs148/cs148opengl4/source/build/unix/Release/CMakeFiles/cs148opengl4.dir/common/Rendering/Shaders/EpicShader.cpp.o"
+./shaders/brdf/epic/frag/noSubroutine/epic.frag:struct EpicLightProperties {
+./shaders/brdf/epic/frag/noSubroutine/epic.frag:uniform EpicLightProperties pointLight;
+./shaders/brdf/epic/frag/noSubroutine/epic.frag:uniform EpicLightProperties directionalLight;
+./shaders/brdf/epic/frag/noSubroutine/epic.frag:uniform EpicLightProperties hemisphereLight;
+./shaders/brdf/epic/fragTexture/noSubroutine/epic.frag:struct EpicLightProperties {
+./shaders/brdf/epic/fragTexture/noSubroutine/epic.frag:uniform EpicLightProperties pointLight;
+./shaders/brdf/epic/fragTexture/noSubroutine/epic.frag:uniform EpicLightProperties directionalLight;
+./shaders/brdf/epic/fragTexture/noSubroutine/epic.frag:uniform EpicLightProperties hemisphereLight;
