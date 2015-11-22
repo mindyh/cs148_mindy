@@ -23,6 +23,9 @@ public:
     // Sampling Properties
     virtual int GetSamplesPerPixel() const;
 
+    virtual float GetFocusPlane() const;
+    virtual float GetAperture() const;
+
     // whether or not to continue sampling the scene from the camera.
     virtual bool NotifyNewPixelSample(glm::vec3 inputSampleColor, int sampleIndex) = 0;
 

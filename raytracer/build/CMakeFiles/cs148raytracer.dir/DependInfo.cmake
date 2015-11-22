@@ -5,11 +5,18 @@ SET(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/mindy/Documents/cs148/raytracer/assignment5/Assignment5.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/assignment5/Assignment5.cpp.o"
+  "/home/mindy/Documents/cs148/raytracer/assignment6/Assignment6.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.o"
+  "/home/mindy/Documents/cs148/raytracer/assignment7/Assignment7.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.o"
+  "/home/mindy/Documents/cs148/raytracer/assignment8/Assignment8.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Acceleration/AccelerationGenerator.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationGenerator.cpp.o"
+  "/home/mindy/Documents/cs148/raytracer/common/Acceleration/AccelerationNode.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Acceleration/AccelerationStructure.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationStructure.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Acceleration/BVH/BVHAcceleration.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Acceleration/BVH/BVHAcceleration.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Acceleration/BVH/Internal/BVHNode.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Acceleration/BVH/Internal/BVHNode.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Acceleration/Naive/NaiveAcceleration.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Acceleration/Naive/NaiveAcceleration.cpp.o"
+  "/home/mindy/Documents/cs148/raytracer/common/Acceleration/UniformGrid/Internal/Voxel.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.o"
+  "/home/mindy/Documents/cs148/raytracer/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o"
+  "/home/mindy/Documents/cs148/raytracer/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Application.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Application.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Intersection/IntersectionState.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Intersection/IntersectionState.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Output/ImageWriter.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Output/ImageWriter.cpp.o"
@@ -17,7 +24,12 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/mindy/Documents/cs148/raytracer/common/Rendering/Material/BlinnPhong/BlinnPhongMaterial.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Rendering/Material/BlinnPhong/BlinnPhongMaterial.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Rendering/Material/Material.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Rendering/Material/Material.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Rendering/Renderer.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer.cpp.o"
-  "/home/mindy/Documents/cs148/raytracer/common/Rendering/Renderer/Forward/ForwardRenderer.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o"
+  "/home/mindy/Documents/cs148/raytracer/common/Rendering/Renderer/Backward/BackwardRenderer.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o"
+  "/home/mindy/Documents/cs148/raytracer/common/Rendering/Renderer/Photon/Photon.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.o"
+  "/home/mindy/Documents/cs148/raytracer/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o"
+  "/home/mindy/Documents/cs148/raytracer/common/Rendering/Textures/CubeMapTexture.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.o"
+  "/home/mindy/Documents/cs148/raytracer/common/Rendering/Textures/Texture.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.o"
+  "/home/mindy/Documents/cs148/raytracer/common/Rendering/Textures/Texture2D.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Sampling/Adaptive/Simple/SimpleAdaptiveSampler.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Sampling/Adaptive/Simple/SimpleAdaptiveSampler.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Sampling/ColorSampler.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Sampling/ColorSampler.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Sampling/Jitter/JitterColorSampler.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Sampling/Jitter/JitterColorSampler.cpp.o"
@@ -27,6 +39,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/mindy/Documents/cs148/raytracer/common/Scene/Geometry/Primitives/Triangle/Triangle.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Primitives/Triangle/Triangle.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Scene/Geometry/Ray/Ray.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Ray/Ray.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Scene/Geometry/Simple/Box/Box.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Simple/Box/Box.cpp.o"
+  "/home/mindy/Documents/cs148/raytracer/common/Scene/Lights/Area/AreaLight.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Scene/Lights/Directional/DirectionalLight.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Directional/DirectionalLight.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Scene/Lights/Light.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Light.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Scene/Lights/Point/PointLight.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Point/PointLight.cpp.o"
@@ -34,6 +47,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/mindy/Documents/cs148/raytracer/common/Scene/SceneObject.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Scene/SceneObject.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Utility/Diagnostics/Diagnostics.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Utility/Diagnostics/Diagnostics.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Utility/Mesh/Loading/MeshLoader.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Utility/Mesh/Loading/MeshLoader.cpp.o"
+  "/home/mindy/Documents/cs148/raytracer/common/Utility/Texture/TextureLoader.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/common/Utility/Timer/Timer.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/common/Utility/Timer/Timer.cpp.o"
   "/home/mindy/Documents/cs148/raytracer/main.cpp" "/home/mindy/Documents/cs148/raytracer/build/CMakeFiles/cs148raytracer.dir/main.cpp.o"
   )
@@ -52,6 +66,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../."
   ".././external/glm"
+  ".././external/libkdtree"
   ".././external/assimp/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

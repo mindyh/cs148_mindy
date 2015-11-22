@@ -135,6 +135,78 @@ assignment5/Assignment5.cpp.s:
 	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/assignment5/Assignment5.cpp.s
 .PHONY : assignment5/Assignment5.cpp.s
 
+assignment6/Assignment6.o: assignment6/Assignment6.cpp.o
+.PHONY : assignment6/Assignment6.o
+
+# target to build an object file
+assignment6/Assignment6.cpp.o:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.o
+.PHONY : assignment6/Assignment6.cpp.o
+
+assignment6/Assignment6.i: assignment6/Assignment6.cpp.i
+.PHONY : assignment6/Assignment6.i
+
+# target to preprocess a source file
+assignment6/Assignment6.cpp.i:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.i
+.PHONY : assignment6/Assignment6.cpp.i
+
+assignment6/Assignment6.s: assignment6/Assignment6.cpp.s
+.PHONY : assignment6/Assignment6.s
+
+# target to generate assembly for a file
+assignment6/Assignment6.cpp.s:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.s
+.PHONY : assignment6/Assignment6.cpp.s
+
+assignment7/Assignment7.o: assignment7/Assignment7.cpp.o
+.PHONY : assignment7/Assignment7.o
+
+# target to build an object file
+assignment7/Assignment7.cpp.o:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.o
+.PHONY : assignment7/Assignment7.cpp.o
+
+assignment7/Assignment7.i: assignment7/Assignment7.cpp.i
+.PHONY : assignment7/Assignment7.i
+
+# target to preprocess a source file
+assignment7/Assignment7.cpp.i:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.i
+.PHONY : assignment7/Assignment7.cpp.i
+
+assignment7/Assignment7.s: assignment7/Assignment7.cpp.s
+.PHONY : assignment7/Assignment7.s
+
+# target to generate assembly for a file
+assignment7/Assignment7.cpp.s:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.s
+.PHONY : assignment7/Assignment7.cpp.s
+
+assignment8/Assignment8.o: assignment8/Assignment8.cpp.o
+.PHONY : assignment8/Assignment8.o
+
+# target to build an object file
+assignment8/Assignment8.cpp.o:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.o
+.PHONY : assignment8/Assignment8.cpp.o
+
+assignment8/Assignment8.i: assignment8/Assignment8.cpp.i
+.PHONY : assignment8/Assignment8.i
+
+# target to preprocess a source file
+assignment8/Assignment8.cpp.i:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.i
+.PHONY : assignment8/Assignment8.cpp.i
+
+assignment8/Assignment8.s: assignment8/Assignment8.cpp.s
+.PHONY : assignment8/Assignment8.s
+
+# target to generate assembly for a file
+assignment8/Assignment8.cpp.s:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.s
+.PHONY : assignment8/Assignment8.cpp.s
+
 common/Acceleration/AccelerationGenerator.o: common/Acceleration/AccelerationGenerator.cpp.o
 .PHONY : common/Acceleration/AccelerationGenerator.o
 
@@ -158,6 +230,30 @@ common/Acceleration/AccelerationGenerator.s: common/Acceleration/AccelerationGen
 common/Acceleration/AccelerationGenerator.cpp.s:
 	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationGenerator.cpp.s
 .PHONY : common/Acceleration/AccelerationGenerator.cpp.s
+
+common/Acceleration/AccelerationNode.o: common/Acceleration/AccelerationNode.cpp.o
+.PHONY : common/Acceleration/AccelerationNode.o
+
+# target to build an object file
+common/Acceleration/AccelerationNode.cpp.o:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.o
+.PHONY : common/Acceleration/AccelerationNode.cpp.o
+
+common/Acceleration/AccelerationNode.i: common/Acceleration/AccelerationNode.cpp.i
+.PHONY : common/Acceleration/AccelerationNode.i
+
+# target to preprocess a source file
+common/Acceleration/AccelerationNode.cpp.i:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.i
+.PHONY : common/Acceleration/AccelerationNode.cpp.i
+
+common/Acceleration/AccelerationNode.s: common/Acceleration/AccelerationNode.cpp.s
+.PHONY : common/Acceleration/AccelerationNode.s
+
+# target to generate assembly for a file
+common/Acceleration/AccelerationNode.cpp.s:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.s
+.PHONY : common/Acceleration/AccelerationNode.cpp.s
 
 common/Acceleration/AccelerationStructure.o: common/Acceleration/AccelerationStructure.cpp.o
 .PHONY : common/Acceleration/AccelerationStructure.o
@@ -254,6 +350,78 @@ common/Acceleration/Naive/NaiveAcceleration.s: common/Acceleration/Naive/NaiveAc
 common/Acceleration/Naive/NaiveAcceleration.cpp.s:
 	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Acceleration/Naive/NaiveAcceleration.cpp.s
 .PHONY : common/Acceleration/Naive/NaiveAcceleration.cpp.s
+
+common/Acceleration/UniformGrid/Internal/Voxel.o: common/Acceleration/UniformGrid/Internal/Voxel.cpp.o
+.PHONY : common/Acceleration/UniformGrid/Internal/Voxel.o
+
+# target to build an object file
+common/Acceleration/UniformGrid/Internal/Voxel.cpp.o:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.o
+.PHONY : common/Acceleration/UniformGrid/Internal/Voxel.cpp.o
+
+common/Acceleration/UniformGrid/Internal/Voxel.i: common/Acceleration/UniformGrid/Internal/Voxel.cpp.i
+.PHONY : common/Acceleration/UniformGrid/Internal/Voxel.i
+
+# target to preprocess a source file
+common/Acceleration/UniformGrid/Internal/Voxel.cpp.i:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.i
+.PHONY : common/Acceleration/UniformGrid/Internal/Voxel.cpp.i
+
+common/Acceleration/UniformGrid/Internal/Voxel.s: common/Acceleration/UniformGrid/Internal/Voxel.cpp.s
+.PHONY : common/Acceleration/UniformGrid/Internal/Voxel.s
+
+# target to generate assembly for a file
+common/Acceleration/UniformGrid/Internal/Voxel.cpp.s:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.s
+.PHONY : common/Acceleration/UniformGrid/Internal/Voxel.cpp.s
+
+common/Acceleration/UniformGrid/Internal/VoxelGrid.o: common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o
+.PHONY : common/Acceleration/UniformGrid/Internal/VoxelGrid.o
+
+# target to build an object file
+common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o
+.PHONY : common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o
+
+common/Acceleration/UniformGrid/Internal/VoxelGrid.i: common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.i
+.PHONY : common/Acceleration/UniformGrid/Internal/VoxelGrid.i
+
+# target to preprocess a source file
+common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.i:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.i
+.PHONY : common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.i
+
+common/Acceleration/UniformGrid/Internal/VoxelGrid.s: common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.s
+.PHONY : common/Acceleration/UniformGrid/Internal/VoxelGrid.s
+
+# target to generate assembly for a file
+common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.s:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.s
+.PHONY : common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.s
+
+common/Acceleration/UniformGrid/UniformGridAcceleration.o: common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o
+.PHONY : common/Acceleration/UniformGrid/UniformGridAcceleration.o
+
+# target to build an object file
+common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o
+.PHONY : common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o
+
+common/Acceleration/UniformGrid/UniformGridAcceleration.i: common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.i
+.PHONY : common/Acceleration/UniformGrid/UniformGridAcceleration.i
+
+# target to preprocess a source file
+common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.i:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.i
+.PHONY : common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.i
+
+common/Acceleration/UniformGrid/UniformGridAcceleration.s: common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.s
+.PHONY : common/Acceleration/UniformGrid/UniformGridAcceleration.s
+
+# target to generate assembly for a file
+common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.s:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.s
+.PHONY : common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.s
 
 common/Application.o: common/Application.cpp.o
 .PHONY : common/Application.o
@@ -423,29 +591,149 @@ common/Rendering/Renderer.cpp.s:
 	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer.cpp.s
 .PHONY : common/Rendering/Renderer.cpp.s
 
-common/Rendering/Renderer/Forward/ForwardRenderer.o: common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o
-.PHONY : common/Rendering/Renderer/Forward/ForwardRenderer.o
+common/Rendering/Renderer/Backward/BackwardRenderer.o: common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o
+.PHONY : common/Rendering/Renderer/Backward/BackwardRenderer.o
 
 # target to build an object file
-common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o:
-	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o
-.PHONY : common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o
+common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o
+.PHONY : common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o
 
-common/Rendering/Renderer/Forward/ForwardRenderer.i: common/Rendering/Renderer/Forward/ForwardRenderer.cpp.i
-.PHONY : common/Rendering/Renderer/Forward/ForwardRenderer.i
+common/Rendering/Renderer/Backward/BackwardRenderer.i: common/Rendering/Renderer/Backward/BackwardRenderer.cpp.i
+.PHONY : common/Rendering/Renderer/Backward/BackwardRenderer.i
 
 # target to preprocess a source file
-common/Rendering/Renderer/Forward/ForwardRenderer.cpp.i:
-	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.i
-.PHONY : common/Rendering/Renderer/Forward/ForwardRenderer.cpp.i
+common/Rendering/Renderer/Backward/BackwardRenderer.cpp.i:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.i
+.PHONY : common/Rendering/Renderer/Backward/BackwardRenderer.cpp.i
 
-common/Rendering/Renderer/Forward/ForwardRenderer.s: common/Rendering/Renderer/Forward/ForwardRenderer.cpp.s
-.PHONY : common/Rendering/Renderer/Forward/ForwardRenderer.s
+common/Rendering/Renderer/Backward/BackwardRenderer.s: common/Rendering/Renderer/Backward/BackwardRenderer.cpp.s
+.PHONY : common/Rendering/Renderer/Backward/BackwardRenderer.s
 
 # target to generate assembly for a file
-common/Rendering/Renderer/Forward/ForwardRenderer.cpp.s:
-	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.s
-.PHONY : common/Rendering/Renderer/Forward/ForwardRenderer.cpp.s
+common/Rendering/Renderer/Backward/BackwardRenderer.cpp.s:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.s
+.PHONY : common/Rendering/Renderer/Backward/BackwardRenderer.cpp.s
+
+common/Rendering/Renderer/Photon/Photon.o: common/Rendering/Renderer/Photon/Photon.cpp.o
+.PHONY : common/Rendering/Renderer/Photon/Photon.o
+
+# target to build an object file
+common/Rendering/Renderer/Photon/Photon.cpp.o:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.o
+.PHONY : common/Rendering/Renderer/Photon/Photon.cpp.o
+
+common/Rendering/Renderer/Photon/Photon.i: common/Rendering/Renderer/Photon/Photon.cpp.i
+.PHONY : common/Rendering/Renderer/Photon/Photon.i
+
+# target to preprocess a source file
+common/Rendering/Renderer/Photon/Photon.cpp.i:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.i
+.PHONY : common/Rendering/Renderer/Photon/Photon.cpp.i
+
+common/Rendering/Renderer/Photon/Photon.s: common/Rendering/Renderer/Photon/Photon.cpp.s
+.PHONY : common/Rendering/Renderer/Photon/Photon.s
+
+# target to generate assembly for a file
+common/Rendering/Renderer/Photon/Photon.cpp.s:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.s
+.PHONY : common/Rendering/Renderer/Photon/Photon.cpp.s
+
+common/Rendering/Renderer/Photon/PhotonMappingRenderer.o: common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o
+.PHONY : common/Rendering/Renderer/Photon/PhotonMappingRenderer.o
+
+# target to build an object file
+common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o
+.PHONY : common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o
+
+common/Rendering/Renderer/Photon/PhotonMappingRenderer.i: common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.i
+.PHONY : common/Rendering/Renderer/Photon/PhotonMappingRenderer.i
+
+# target to preprocess a source file
+common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.i:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.i
+.PHONY : common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.i
+
+common/Rendering/Renderer/Photon/PhotonMappingRenderer.s: common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.s
+.PHONY : common/Rendering/Renderer/Photon/PhotonMappingRenderer.s
+
+# target to generate assembly for a file
+common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.s:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.s
+.PHONY : common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.s
+
+common/Rendering/Textures/CubeMapTexture.o: common/Rendering/Textures/CubeMapTexture.cpp.o
+.PHONY : common/Rendering/Textures/CubeMapTexture.o
+
+# target to build an object file
+common/Rendering/Textures/CubeMapTexture.cpp.o:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.o
+.PHONY : common/Rendering/Textures/CubeMapTexture.cpp.o
+
+common/Rendering/Textures/CubeMapTexture.i: common/Rendering/Textures/CubeMapTexture.cpp.i
+.PHONY : common/Rendering/Textures/CubeMapTexture.i
+
+# target to preprocess a source file
+common/Rendering/Textures/CubeMapTexture.cpp.i:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.i
+.PHONY : common/Rendering/Textures/CubeMapTexture.cpp.i
+
+common/Rendering/Textures/CubeMapTexture.s: common/Rendering/Textures/CubeMapTexture.cpp.s
+.PHONY : common/Rendering/Textures/CubeMapTexture.s
+
+# target to generate assembly for a file
+common/Rendering/Textures/CubeMapTexture.cpp.s:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.s
+.PHONY : common/Rendering/Textures/CubeMapTexture.cpp.s
+
+common/Rendering/Textures/Texture.o: common/Rendering/Textures/Texture.cpp.o
+.PHONY : common/Rendering/Textures/Texture.o
+
+# target to build an object file
+common/Rendering/Textures/Texture.cpp.o:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.o
+.PHONY : common/Rendering/Textures/Texture.cpp.o
+
+common/Rendering/Textures/Texture.i: common/Rendering/Textures/Texture.cpp.i
+.PHONY : common/Rendering/Textures/Texture.i
+
+# target to preprocess a source file
+common/Rendering/Textures/Texture.cpp.i:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.i
+.PHONY : common/Rendering/Textures/Texture.cpp.i
+
+common/Rendering/Textures/Texture.s: common/Rendering/Textures/Texture.cpp.s
+.PHONY : common/Rendering/Textures/Texture.s
+
+# target to generate assembly for a file
+common/Rendering/Textures/Texture.cpp.s:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.s
+.PHONY : common/Rendering/Textures/Texture.cpp.s
+
+common/Rendering/Textures/Texture2D.o: common/Rendering/Textures/Texture2D.cpp.o
+.PHONY : common/Rendering/Textures/Texture2D.o
+
+# target to build an object file
+common/Rendering/Textures/Texture2D.cpp.o:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.o
+.PHONY : common/Rendering/Textures/Texture2D.cpp.o
+
+common/Rendering/Textures/Texture2D.i: common/Rendering/Textures/Texture2D.cpp.i
+.PHONY : common/Rendering/Textures/Texture2D.i
+
+# target to preprocess a source file
+common/Rendering/Textures/Texture2D.cpp.i:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.i
+.PHONY : common/Rendering/Textures/Texture2D.cpp.i
+
+common/Rendering/Textures/Texture2D.s: common/Rendering/Textures/Texture2D.cpp.s
+.PHONY : common/Rendering/Textures/Texture2D.s
+
+# target to generate assembly for a file
+common/Rendering/Textures/Texture2D.cpp.s:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.s
+.PHONY : common/Rendering/Textures/Texture2D.cpp.s
 
 common/Sampling/Adaptive/Simple/SimpleAdaptiveSampler.o: common/Sampling/Adaptive/Simple/SimpleAdaptiveSampler.cpp.o
 .PHONY : common/Sampling/Adaptive/Simple/SimpleAdaptiveSampler.o
@@ -663,6 +951,30 @@ common/Scene/Geometry/Simple/Box/Box.cpp.s:
 	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Simple/Box/Box.cpp.s
 .PHONY : common/Scene/Geometry/Simple/Box/Box.cpp.s
 
+common/Scene/Lights/Area/AreaLight.o: common/Scene/Lights/Area/AreaLight.cpp.o
+.PHONY : common/Scene/Lights/Area/AreaLight.o
+
+# target to build an object file
+common/Scene/Lights/Area/AreaLight.cpp.o:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.o
+.PHONY : common/Scene/Lights/Area/AreaLight.cpp.o
+
+common/Scene/Lights/Area/AreaLight.i: common/Scene/Lights/Area/AreaLight.cpp.i
+.PHONY : common/Scene/Lights/Area/AreaLight.i
+
+# target to preprocess a source file
+common/Scene/Lights/Area/AreaLight.cpp.i:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.i
+.PHONY : common/Scene/Lights/Area/AreaLight.cpp.i
+
+common/Scene/Lights/Area/AreaLight.s: common/Scene/Lights/Area/AreaLight.cpp.s
+.PHONY : common/Scene/Lights/Area/AreaLight.s
+
+# target to generate assembly for a file
+common/Scene/Lights/Area/AreaLight.cpp.s:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.s
+.PHONY : common/Scene/Lights/Area/AreaLight.cpp.s
+
 common/Scene/Lights/Directional/DirectionalLight.o: common/Scene/Lights/Directional/DirectionalLight.cpp.o
 .PHONY : common/Scene/Lights/Directional/DirectionalLight.o
 
@@ -831,6 +1143,30 @@ common/Utility/Mesh/Loading/MeshLoader.cpp.s:
 	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Utility/Mesh/Loading/MeshLoader.cpp.s
 .PHONY : common/Utility/Mesh/Loading/MeshLoader.cpp.s
 
+common/Utility/Texture/TextureLoader.o: common/Utility/Texture/TextureLoader.cpp.o
+.PHONY : common/Utility/Texture/TextureLoader.o
+
+# target to build an object file
+common/Utility/Texture/TextureLoader.cpp.o:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.o
+.PHONY : common/Utility/Texture/TextureLoader.cpp.o
+
+common/Utility/Texture/TextureLoader.i: common/Utility/Texture/TextureLoader.cpp.i
+.PHONY : common/Utility/Texture/TextureLoader.i
+
+# target to preprocess a source file
+common/Utility/Texture/TextureLoader.cpp.i:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.i
+.PHONY : common/Utility/Texture/TextureLoader.cpp.i
+
+common/Utility/Texture/TextureLoader.s: common/Utility/Texture/TextureLoader.cpp.s
+.PHONY : common/Utility/Texture/TextureLoader.s
+
+# target to generate assembly for a file
+common/Utility/Texture/TextureLoader.cpp.s:
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.s
+.PHONY : common/Utility/Texture/TextureLoader.cpp.s
+
 common/Utility/Timer/Timer.o: common/Utility/Timer/Timer.cpp.o
 .PHONY : common/Utility/Timer/Timer.o
 
@@ -891,9 +1227,21 @@ help:
 	@echo "... assignment5/Assignment5.o"
 	@echo "... assignment5/Assignment5.i"
 	@echo "... assignment5/Assignment5.s"
+	@echo "... assignment6/Assignment6.o"
+	@echo "... assignment6/Assignment6.i"
+	@echo "... assignment6/Assignment6.s"
+	@echo "... assignment7/Assignment7.o"
+	@echo "... assignment7/Assignment7.i"
+	@echo "... assignment7/Assignment7.s"
+	@echo "... assignment8/Assignment8.o"
+	@echo "... assignment8/Assignment8.i"
+	@echo "... assignment8/Assignment8.s"
 	@echo "... common/Acceleration/AccelerationGenerator.o"
 	@echo "... common/Acceleration/AccelerationGenerator.i"
 	@echo "... common/Acceleration/AccelerationGenerator.s"
+	@echo "... common/Acceleration/AccelerationNode.o"
+	@echo "... common/Acceleration/AccelerationNode.i"
+	@echo "... common/Acceleration/AccelerationNode.s"
 	@echo "... common/Acceleration/AccelerationStructure.o"
 	@echo "... common/Acceleration/AccelerationStructure.i"
 	@echo "... common/Acceleration/AccelerationStructure.s"
@@ -906,6 +1254,15 @@ help:
 	@echo "... common/Acceleration/Naive/NaiveAcceleration.o"
 	@echo "... common/Acceleration/Naive/NaiveAcceleration.i"
 	@echo "... common/Acceleration/Naive/NaiveAcceleration.s"
+	@echo "... common/Acceleration/UniformGrid/Internal/Voxel.o"
+	@echo "... common/Acceleration/UniformGrid/Internal/Voxel.i"
+	@echo "... common/Acceleration/UniformGrid/Internal/Voxel.s"
+	@echo "... common/Acceleration/UniformGrid/Internal/VoxelGrid.o"
+	@echo "... common/Acceleration/UniformGrid/Internal/VoxelGrid.i"
+	@echo "... common/Acceleration/UniformGrid/Internal/VoxelGrid.s"
+	@echo "... common/Acceleration/UniformGrid/UniformGridAcceleration.o"
+	@echo "... common/Acceleration/UniformGrid/UniformGridAcceleration.i"
+	@echo "... common/Acceleration/UniformGrid/UniformGridAcceleration.s"
 	@echo "... common/Application.o"
 	@echo "... common/Application.i"
 	@echo "... common/Application.s"
@@ -927,9 +1284,24 @@ help:
 	@echo "... common/Rendering/Renderer.o"
 	@echo "... common/Rendering/Renderer.i"
 	@echo "... common/Rendering/Renderer.s"
-	@echo "... common/Rendering/Renderer/Forward/ForwardRenderer.o"
-	@echo "... common/Rendering/Renderer/Forward/ForwardRenderer.i"
-	@echo "... common/Rendering/Renderer/Forward/ForwardRenderer.s"
+	@echo "... common/Rendering/Renderer/Backward/BackwardRenderer.o"
+	@echo "... common/Rendering/Renderer/Backward/BackwardRenderer.i"
+	@echo "... common/Rendering/Renderer/Backward/BackwardRenderer.s"
+	@echo "... common/Rendering/Renderer/Photon/Photon.o"
+	@echo "... common/Rendering/Renderer/Photon/Photon.i"
+	@echo "... common/Rendering/Renderer/Photon/Photon.s"
+	@echo "... common/Rendering/Renderer/Photon/PhotonMappingRenderer.o"
+	@echo "... common/Rendering/Renderer/Photon/PhotonMappingRenderer.i"
+	@echo "... common/Rendering/Renderer/Photon/PhotonMappingRenderer.s"
+	@echo "... common/Rendering/Textures/CubeMapTexture.o"
+	@echo "... common/Rendering/Textures/CubeMapTexture.i"
+	@echo "... common/Rendering/Textures/CubeMapTexture.s"
+	@echo "... common/Rendering/Textures/Texture.o"
+	@echo "... common/Rendering/Textures/Texture.i"
+	@echo "... common/Rendering/Textures/Texture.s"
+	@echo "... common/Rendering/Textures/Texture2D.o"
+	@echo "... common/Rendering/Textures/Texture2D.i"
+	@echo "... common/Rendering/Textures/Texture2D.s"
 	@echo "... common/Sampling/Adaptive/Simple/SimpleAdaptiveSampler.o"
 	@echo "... common/Sampling/Adaptive/Simple/SimpleAdaptiveSampler.i"
 	@echo "... common/Sampling/Adaptive/Simple/SimpleAdaptiveSampler.s"
@@ -957,6 +1329,9 @@ help:
 	@echo "... common/Scene/Geometry/Simple/Box/Box.o"
 	@echo "... common/Scene/Geometry/Simple/Box/Box.i"
 	@echo "... common/Scene/Geometry/Simple/Box/Box.s"
+	@echo "... common/Scene/Lights/Area/AreaLight.o"
+	@echo "... common/Scene/Lights/Area/AreaLight.i"
+	@echo "... common/Scene/Lights/Area/AreaLight.s"
 	@echo "... common/Scene/Lights/Directional/DirectionalLight.o"
 	@echo "... common/Scene/Lights/Directional/DirectionalLight.i"
 	@echo "... common/Scene/Lights/Directional/DirectionalLight.s"
@@ -978,6 +1353,9 @@ help:
 	@echo "... common/Utility/Mesh/Loading/MeshLoader.o"
 	@echo "... common/Utility/Mesh/Loading/MeshLoader.i"
 	@echo "... common/Utility/Mesh/Loading/MeshLoader.s"
+	@echo "... common/Utility/Texture/TextureLoader.o"
+	@echo "... common/Utility/Texture/TextureLoader.i"
+	@echo "... common/Utility/Texture/TextureLoader.s"
 	@echo "... common/Utility/Timer/Timer.o"
 	@echo "... common/Utility/Timer/Timer.i"
 	@echo "... common/Utility/Timer/Timer.s"

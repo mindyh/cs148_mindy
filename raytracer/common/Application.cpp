@@ -20,3 +20,13 @@ glm::vec2 Application::GetImageOutputResolution() const
 void Application::PerformImagePostprocessing(class ImageWriter&)
 {
 }
+
+float Application::GetFocusPlane() const
+{
+	return 1.f;
+}
+
+float Application::GetAperture() const
+{
+	return 0.f;
+}

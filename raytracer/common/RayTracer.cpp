@@ -8,6 +8,9 @@
 #include "common/Output/ImageWriter.h"
 #include "common/Rendering/Renderer.h"
 
+#include <random>
+#include <cmath>
+
 #include "common/Scene/Geometry/Primitives/Triangle/Triangle.h"
 RayTracer::RayTracer(std::unique_ptr<class Application> app):
     storedApplication(std::move(app))
@@ -24,12 +27,13 @@ void RayTracer::Run()
     assert(currentScene && currentCamera && currentSampler && currentRenderer);
 
     currentSampler->InitializeSampler(storedApplication.get(), currentScene.get());
-    currentRenderer->InitializeRenderer();
 
     // Scene preprocessing -- generate acceleration structures, etc.
     // After this call, we are guaranteed that the "acceleration" member of the scene and all scene objects within the scene will be non-NULL.
     currentScene->GenerateDefaultAccelerationData();
     currentScene->Finalize();
+
+    currentRenderer->InitializeRenderer();
 
     // Prepare for Output
     const glm::vec2 currentResolution = storedApplication->GetImageOutputResolution();
@@ -39,19 +43,22 @@ void RayTracer::Run()
     const int maxSamplesPerPixel = storedApplication->GetSamplesPerPixel();
     assert(maxSamplesPerPixel >= 1);
 
-    for (int r = 0; r < static_cast<int>(currentResolution.y); ++r) {
-        for (int c = 0; c < static_cast<int>(currentResolution.x); ++c) {
-
+    // for each pixel on the image
+    for (int y = 0; y < static_cast<int>(currentResolution.y); ++y) {
+        for (int x = 0; x < static_cast<int>(currentResolution.x); ++x) {
+            // lambda that write pixel samples to image?
             imageWriter.SetPixelColor(currentSampler->ComputeSamplesAndColor(maxSamplesPerPixel, 2, [&](glm::vec3 inputSample) {
                 const glm::vec3 minRange(-0.5f, -0.5f, 0.f);
                 const glm::vec3 maxRange(0.5f, 0.5f, 0.f);
                 const glm::vec3 sampleOffset = (maxSamplesPerPixel == 1) ? glm::vec3(0.f, 0.f, 0.f) : minRange + (maxRange - minRange) * inputSample;
 
-                glm::vec2 normalizedCoordinates(static_cast<float>(c) + sampleOffset.x, static_cast<float>(r) + sampleOffset.y);
+                glm::vec2 normalizedCoordinates(static_cast<float>(x) + sampleOffset.x, static_cast<float>(y) + sampleOffset.y);
                 normalizedCoordinates /= currentResolution;
 
                 // Construct ray, send it out into the scene and see what we hit.
-                std::shared_ptr<Ray> cameraRay = currentCamera->GenerateRayForNormalizedCoordinates(normalizedCoordinates);
+                std::shared_ptr<Ray> cameraRay = currentCamera->GenerateRayForNormalizedCoordinates(normalizedCoordinates, 
+                                                    storedApplication->GetFocusPlane(),
+                                                    storedApplication->GetAperture());
                 assert(cameraRay);
 
                 IntersectionState rayIntersection(storedApplication->GetMaxReflectionBounces(), storedApplication->GetMaxRefractionBounces());
@@ -62,9 +69,8 @@ void RayTracer::Run()
                 if (didHitScene) {
                     sampleColor = currentRenderer->ComputeSampleColor(rayIntersection, *cameraRay.get());
                 }
-
                 return sampleColor;
-            }), c, r);
+            }), x, y);
         }
     }
 

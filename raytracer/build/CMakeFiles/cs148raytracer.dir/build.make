@@ -187,9 +187,101 @@ CMakeFiles/cs148raytracer.dir/common/Intersection/IntersectionState.cpp.o.provid
 
 CMakeFiles/cs148raytracer.dir/common/Intersection/IntersectionState.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/common/Intersection/IntersectionState.cpp.o
 
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o: ../common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/mindy/Documents/cs148/raytracer/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp > CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.i
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/mindy/Documents/cs148/raytracer/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp -o CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.s
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o.requires:
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o.requires
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o.provides: CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o.provides.build
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o.provides
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.o: ../common/Acceleration/UniformGrid/Internal/Voxel.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Acceleration/UniformGrid/Internal/Voxel.cpp
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/mindy/Documents/cs148/raytracer/common/Acceleration/UniformGrid/Internal/Voxel.cpp > CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.i
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/mindy/Documents/cs148/raytracer/common/Acceleration/UniformGrid/Internal/Voxel.cpp -o CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.s
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.o.requires:
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.o.requires
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.o.provides: CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.o.provides.build
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.o.provides
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.o
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o: ../common/Acceleration/UniformGrid/UniformGridAcceleration.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/mindy/Documents/cs148/raytracer/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp > CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.i
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/mindy/Documents/cs148/raytracer/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp -o CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.s
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o.requires:
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o.requires
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o.provides: CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o.provides.build
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o.provides
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
+CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.o: ../common/Acceleration/AccelerationNode.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Acceleration/AccelerationNode.cpp
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/mindy/Documents/cs148/raytracer/common/Acceleration/AccelerationNode.cpp > CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.i
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/mindy/Documents/cs148/raytracer/common/Acceleration/AccelerationNode.cpp -o CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.s
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.o.requires:
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.o.requires
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.o.provides: CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.o.provides.build
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.o.provides
+
+CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.o
+
 CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationGenerator.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationGenerator.cpp.o: ../common/Acceleration/AccelerationGenerator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationGenerator.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationGenerator.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Acceleration/AccelerationGenerator.cpp
 
@@ -212,7 +304,7 @@ CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationGenerator.cpp.o.pr
 
 CMakeFiles/cs148raytracer.dir/common/Acceleration/BVH/Internal/BVHNode.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Acceleration/BVH/Internal/BVHNode.cpp.o: ../common/Acceleration/BVH/Internal/BVHNode.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Acceleration/BVH/Internal/BVHNode.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Acceleration/BVH/Internal/BVHNode.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Acceleration/BVH/Internal/BVHNode.cpp
 
@@ -235,7 +327,7 @@ CMakeFiles/cs148raytracer.dir/common/Acceleration/BVH/Internal/BVHNode.cpp.o.pro
 
 CMakeFiles/cs148raytracer.dir/common/Acceleration/BVH/BVHAcceleration.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Acceleration/BVH/BVHAcceleration.cpp.o: ../common/Acceleration/BVH/BVHAcceleration.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Acceleration/BVH/BVHAcceleration.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Acceleration/BVH/BVHAcceleration.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Acceleration/BVH/BVHAcceleration.cpp
 
@@ -258,7 +350,7 @@ CMakeFiles/cs148raytracer.dir/common/Acceleration/BVH/BVHAcceleration.cpp.o.prov
 
 CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationStructure.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationStructure.cpp.o: ../common/Acceleration/AccelerationStructure.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationStructure.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationStructure.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Acceleration/AccelerationStructure.cpp
 
@@ -281,7 +373,7 @@ CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationStructure.cpp.o.pr
 
 CMakeFiles/cs148raytracer.dir/common/Acceleration/Naive/NaiveAcceleration.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Acceleration/Naive/NaiveAcceleration.cpp.o: ../common/Acceleration/Naive/NaiveAcceleration.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Acceleration/Naive/NaiveAcceleration.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Acceleration/Naive/NaiveAcceleration.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Acceleration/Naive/NaiveAcceleration.cpp
 
@@ -304,7 +396,7 @@ CMakeFiles/cs148raytracer.dir/common/Acceleration/Naive/NaiveAcceleration.cpp.o.
 
 CMakeFiles/cs148raytracer.dir/common/Scene/SceneObject.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Scene/SceneObject.cpp.o: ../common/Scene/SceneObject.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Scene/SceneObject.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Scene/SceneObject.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Scene/SceneObject.cpp
 
@@ -327,7 +419,7 @@ CMakeFiles/cs148raytracer.dir/common/Scene/SceneObject.cpp.o.provides.build: CMa
 
 CMakeFiles/cs148raytracer.dir/common/Scene/Scene.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Scene/Scene.cpp.o: ../common/Scene/Scene.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Scene/Scene.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Scene/Scene.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Scene/Scene.cpp
 
@@ -350,7 +442,7 @@ CMakeFiles/cs148raytracer.dir/common/Scene/Scene.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Directional/DirectionalLight.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Directional/DirectionalLight.cpp.o: ../common/Scene/Lights/Directional/DirectionalLight.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Directional/DirectionalLight.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Directional/DirectionalLight.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Scene/Lights/Directional/DirectionalLight.cpp
 
@@ -373,7 +465,7 @@ CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Directional/DirectionalLight.c
 
 CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Light.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Light.cpp.o: ../common/Scene/Lights/Light.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Light.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Light.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Scene/Lights/Light.cpp
 
@@ -394,9 +486,32 @@ CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Light.cpp.o.provides: CMakeFil
 
 CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Light.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Light.cpp.o
 
+CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
+CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.o: ../common/Scene/Lights/Area/AreaLight.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Scene/Lights/Area/AreaLight.cpp
+
+CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/mindy/Documents/cs148/raytracer/common/Scene/Lights/Area/AreaLight.cpp > CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.i
+
+CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/mindy/Documents/cs148/raytracer/common/Scene/Lights/Area/AreaLight.cpp -o CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.s
+
+CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.o.requires:
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.o.requires
+
+CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.o.provides: CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.o.provides.build
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.o.provides
+
+CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.o
+
 CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Point/PointLight.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Point/PointLight.cpp.o: ../common/Scene/Lights/Point/PointLight.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Point/PointLight.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Point/PointLight.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Scene/Lights/Point/PointLight.cpp
 
@@ -419,7 +534,7 @@ CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Point/PointLight.cpp.o.provide
 
 CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Primitives/Triangle/Triangle.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Primitives/Triangle/Triangle.cpp.o: ../common/Scene/Geometry/Primitives/Triangle/Triangle.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Primitives/Triangle/Triangle.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Primitives/Triangle/Triangle.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Scene/Geometry/Primitives/Triangle/Triangle.cpp
 
@@ -442,7 +557,7 @@ CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Primitives/Triangle/Triangle
 
 CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Ray/Ray.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Ray/Ray.cpp.o: ../common/Scene/Geometry/Ray/Ray.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Ray/Ray.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Ray/Ray.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Scene/Geometry/Ray/Ray.cpp
 
@@ -465,7 +580,7 @@ CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Ray/Ray.cpp.o.provides.build
 
 CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Mesh/MeshObject.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Mesh/MeshObject.cpp.o: ../common/Scene/Geometry/Mesh/MeshObject.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Mesh/MeshObject.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Mesh/MeshObject.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Scene/Geometry/Mesh/MeshObject.cpp
 
@@ -488,7 +603,7 @@ CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Mesh/MeshObject.cpp.o.provid
 
 CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Simple/Box/Box.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Simple/Box/Box.cpp.o: ../common/Scene/Geometry/Simple/Box/Box.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Simple/Box/Box.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Simple/Box/Box.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Scene/Geometry/Simple/Box/Box.cpp
 
@@ -511,7 +626,7 @@ CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Simple/Box/Box.cpp.o.provide
 
 CMakeFiles/cs148raytracer.dir/common/Scene/Camera/Perspective/PerspectiveCamera.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Scene/Camera/Perspective/PerspectiveCamera.cpp.o: ../common/Scene/Camera/Perspective/PerspectiveCamera.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Scene/Camera/Perspective/PerspectiveCamera.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Scene/Camera/Perspective/PerspectiveCamera.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Scene/Camera/Perspective/PerspectiveCamera.cpp
 
@@ -534,7 +649,7 @@ CMakeFiles/cs148raytracer.dir/common/Scene/Camera/Perspective/PerspectiveCamera.
 
 CMakeFiles/cs148raytracer.dir/common/Scene/Camera/Camera.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Scene/Camera/Camera.cpp.o: ../common/Scene/Camera/Camera.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Scene/Camera/Camera.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Scene/Camera/Camera.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Scene/Camera/Camera.cpp
 
@@ -557,7 +672,7 @@ CMakeFiles/cs148raytracer.dir/common/Scene/Camera/Camera.cpp.o.provides.build: C
 
 CMakeFiles/cs148raytracer.dir/common/Application.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Application.cpp.o: ../common/Application.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Application.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Application.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Application.cpp
 
@@ -580,7 +695,7 @@ CMakeFiles/cs148raytracer.dir/common/Application.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/cs148raytracer.dir/common/RayTracer.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/RayTracer.cpp.o: ../common/RayTracer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/RayTracer.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/RayTracer.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/RayTracer.cpp
 
@@ -601,32 +716,78 @@ CMakeFiles/cs148raytracer.dir/common/RayTracer.cpp.o.provides: CMakeFiles/cs148r
 
 CMakeFiles/cs148raytracer.dir/common/RayTracer.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/common/RayTracer.cpp.o
 
-CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
-CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o: ../common/Rendering/Renderer/Forward/ForwardRenderer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_25)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Rendering/Renderer/Forward/ForwardRenderer.cpp
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o: ../common/Rendering/Renderer/Backward/BackwardRenderer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_30)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Rendering/Renderer/Backward/BackwardRenderer.cpp
 
-CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/mindy/Documents/cs148/raytracer/common/Rendering/Renderer/Forward/ForwardRenderer.cpp > CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.i
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/mindy/Documents/cs148/raytracer/common/Rendering/Renderer/Backward/BackwardRenderer.cpp > CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.i
 
-CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/mindy/Documents/cs148/raytracer/common/Rendering/Renderer/Forward/ForwardRenderer.cpp -o CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.s
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/mindy/Documents/cs148/raytracer/common/Rendering/Renderer/Backward/BackwardRenderer.cpp -o CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.s
 
-CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o.requires:
-.PHONY : CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o.requires
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o.requires:
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o.requires
 
-CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o.provides: CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o.provides.build
-.PHONY : CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o.provides
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o.provides: CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o.provides.build
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o.provides
 
-CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o: ../common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_31)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/mindy/Documents/cs148/raytracer/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp > CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.i
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/mindy/Documents/cs148/raytracer/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp -o CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.s
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o.requires:
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o.requires
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o.provides: CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o.provides.build
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o.provides
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.o: ../common/Rendering/Renderer/Photon/Photon.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_32)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Rendering/Renderer/Photon/Photon.cpp
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/mindy/Documents/cs148/raytracer/common/Rendering/Renderer/Photon/Photon.cpp > CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.i
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/mindy/Documents/cs148/raytracer/common/Rendering/Renderer/Photon/Photon.cpp -o CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.s
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.o.requires:
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.o.requires
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.o.provides: CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.o.provides.build
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.o.provides
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.o
 
 CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer.cpp.o: ../common/Rendering/Renderer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Rendering/Renderer.cpp
 
@@ -647,9 +808,78 @@ CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer.cpp.o.provides: CMakeFil
 
 CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer.cpp.o
 
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.o: ../common/Rendering/Textures/Texture.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_34)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Rendering/Textures/Texture.cpp
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/mindy/Documents/cs148/raytracer/common/Rendering/Textures/Texture.cpp > CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.i
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/mindy/Documents/cs148/raytracer/common/Rendering/Textures/Texture.cpp -o CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.s
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.o.requires:
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.o.requires
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.o.provides: CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.o.provides.build
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.o.provides
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.o
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.o: ../common/Rendering/Textures/CubeMapTexture.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_35)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Rendering/Textures/CubeMapTexture.cpp
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/mindy/Documents/cs148/raytracer/common/Rendering/Textures/CubeMapTexture.cpp > CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.i
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/mindy/Documents/cs148/raytracer/common/Rendering/Textures/CubeMapTexture.cpp -o CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.s
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.o.requires:
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.o.requires
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.o.provides: CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.o.provides.build
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.o.provides
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.o
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.o: ../common/Rendering/Textures/Texture2D.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_36)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Rendering/Textures/Texture2D.cpp
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/mindy/Documents/cs148/raytracer/common/Rendering/Textures/Texture2D.cpp > CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.i
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/mindy/Documents/cs148/raytracer/common/Rendering/Textures/Texture2D.cpp -o CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.s
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.o.requires:
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.o.requires
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.o.provides: CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.o.provides.build
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.o.provides
+
+CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.o
+
 CMakeFiles/cs148raytracer.dir/common/Rendering/Material/Material.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Rendering/Material/Material.cpp.o: ../common/Rendering/Material/Material.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Rendering/Material/Material.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Rendering/Material/Material.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Rendering/Material/Material.cpp
 
@@ -672,7 +902,7 @@ CMakeFiles/cs148raytracer.dir/common/Rendering/Material/Material.cpp.o.provides.
 
 CMakeFiles/cs148raytracer.dir/common/Rendering/Material/BlinnPhong/BlinnPhongMaterial.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Rendering/Material/BlinnPhong/BlinnPhongMaterial.cpp.o: ../common/Rendering/Material/BlinnPhong/BlinnPhongMaterial.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Rendering/Material/BlinnPhong/BlinnPhongMaterial.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Rendering/Material/BlinnPhong/BlinnPhongMaterial.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Rendering/Material/BlinnPhong/BlinnPhongMaterial.cpp
 
@@ -695,7 +925,7 @@ CMakeFiles/cs148raytracer.dir/common/Rendering/Material/BlinnPhong/BlinnPhongMat
 
 CMakeFiles/cs148raytracer.dir/common/Utility/Mesh/Loading/MeshLoader.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Utility/Mesh/Loading/MeshLoader.cpp.o: ../common/Utility/Mesh/Loading/MeshLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Utility/Mesh/Loading/MeshLoader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Utility/Mesh/Loading/MeshLoader.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Utility/Mesh/Loading/MeshLoader.cpp
 
@@ -716,9 +946,32 @@ CMakeFiles/cs148raytracer.dir/common/Utility/Mesh/Loading/MeshLoader.cpp.o.provi
 
 CMakeFiles/cs148raytracer.dir/common/Utility/Mesh/Loading/MeshLoader.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/common/Utility/Mesh/Loading/MeshLoader.cpp.o
 
+CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
+CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.o: ../common/Utility/Texture/TextureLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_40)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Utility/Texture/TextureLoader.cpp
+
+CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/mindy/Documents/cs148/raytracer/common/Utility/Texture/TextureLoader.cpp > CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.i
+
+CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/mindy/Documents/cs148/raytracer/common/Utility/Texture/TextureLoader.cpp -o CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.s
+
+CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.o.requires:
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.o.requires
+
+CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.o.provides: CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.o.provides.build
+.PHONY : CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.o.provides
+
+CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.o
+
 CMakeFiles/cs148raytracer.dir/common/Utility/Timer/Timer.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Utility/Timer/Timer.cpp.o: ../common/Utility/Timer/Timer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Utility/Timer/Timer.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Utility/Timer/Timer.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Utility/Timer/Timer.cpp
 
@@ -741,7 +994,7 @@ CMakeFiles/cs148raytracer.dir/common/Utility/Timer/Timer.cpp.o.provides.build: C
 
 CMakeFiles/cs148raytracer.dir/common/Utility/Diagnostics/Diagnostics.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/common/Utility/Diagnostics/Diagnostics.cpp.o: ../common/Utility/Diagnostics/Diagnostics.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_31)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/common/Utility/Diagnostics/Diagnostics.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/common/Utility/Diagnostics/Diagnostics.cpp.o -c /home/mindy/Documents/cs148/raytracer/common/Utility/Diagnostics/Diagnostics.cpp
 
@@ -764,7 +1017,7 @@ CMakeFiles/cs148raytracer.dir/common/Utility/Diagnostics/Diagnostics.cpp.o.provi
 
 CMakeFiles/cs148raytracer.dir/assignment5/Assignment5.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
 CMakeFiles/cs148raytracer.dir/assignment5/Assignment5.cpp.o: ../assignment5/Assignment5.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_32)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/assignment5/Assignment5.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/assignment5/Assignment5.cpp.o -c /home/mindy/Documents/cs148/raytracer/assignment5/Assignment5.cpp
 
@@ -785,6 +1038,75 @@ CMakeFiles/cs148raytracer.dir/assignment5/Assignment5.cpp.o.provides: CMakeFiles
 
 CMakeFiles/cs148raytracer.dir/assignment5/Assignment5.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/assignment5/Assignment5.cpp.o
 
+CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
+CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.o: ../assignment7/Assignment7.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_44)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.o -c /home/mindy/Documents/cs148/raytracer/assignment7/Assignment7.cpp
+
+CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/mindy/Documents/cs148/raytracer/assignment7/Assignment7.cpp > CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.i
+
+CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/mindy/Documents/cs148/raytracer/assignment7/Assignment7.cpp -o CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.s
+
+CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.o.requires:
+.PHONY : CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.o.requires
+
+CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.o.provides: CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.o.provides.build
+.PHONY : CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.o.provides
+
+CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.o
+
+CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
+CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.o: ../assignment8/Assignment8.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_45)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.o -c /home/mindy/Documents/cs148/raytracer/assignment8/Assignment8.cpp
+
+CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/mindy/Documents/cs148/raytracer/assignment8/Assignment8.cpp > CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.i
+
+CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/mindy/Documents/cs148/raytracer/assignment8/Assignment8.cpp -o CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.s
+
+CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.o.requires:
+.PHONY : CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.o.requires
+
+CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.o.provides: CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.o.provides.build
+.PHONY : CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.o.provides
+
+CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.o
+
+CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.o: CMakeFiles/cs148raytracer.dir/flags.make
+CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.o: ../assignment6/Assignment6.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mindy/Documents/cs148/raytracer/build/CMakeFiles $(CMAKE_PROGRESS_46)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.o -c /home/mindy/Documents/cs148/raytracer/assignment6/Assignment6.cpp
+
+CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/mindy/Documents/cs148/raytracer/assignment6/Assignment6.cpp > CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.i
+
+CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/mindy/Documents/cs148/raytracer/assignment6/Assignment6.cpp -o CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.s
+
+CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.o.requires:
+.PHONY : CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.o.requires
+
+CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.o.provides: CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cs148raytracer.dir/build.make CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.o.provides.build
+.PHONY : CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.o.provides
+
+CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.o.provides.build: CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.o
+
 # Object files for target cs148raytracer
 cs148raytracer_OBJECTS = \
 "CMakeFiles/cs148raytracer.dir/main.cpp.o" \
@@ -793,6 +1115,10 @@ cs148raytracer_OBJECTS = \
 "CMakeFiles/cs148raytracer.dir/common/Sampling/ColorSampler.cpp.o" \
 "CMakeFiles/cs148raytracer.dir/common/Output/ImageWriter.cpp.o" \
 "CMakeFiles/cs148raytracer.dir/common/Intersection/IntersectionState.cpp.o" \
+"CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o" \
+"CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.o" \
+"CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o" \
+"CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.o" \
 "CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationGenerator.cpp.o" \
 "CMakeFiles/cs148raytracer.dir/common/Acceleration/BVH/Internal/BVHNode.cpp.o" \
 "CMakeFiles/cs148raytracer.dir/common/Acceleration/BVH/BVHAcceleration.cpp.o" \
@@ -802,6 +1128,7 @@ cs148raytracer_OBJECTS = \
 "CMakeFiles/cs148raytracer.dir/common/Scene/Scene.cpp.o" \
 "CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Directional/DirectionalLight.cpp.o" \
 "CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Light.cpp.o" \
+"CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.o" \
 "CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Point/PointLight.cpp.o" \
 "CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Primitives/Triangle/Triangle.cpp.o" \
 "CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Ray/Ray.cpp.o" \
@@ -811,14 +1138,23 @@ cs148raytracer_OBJECTS = \
 "CMakeFiles/cs148raytracer.dir/common/Scene/Camera/Camera.cpp.o" \
 "CMakeFiles/cs148raytracer.dir/common/Application.cpp.o" \
 "CMakeFiles/cs148raytracer.dir/common/RayTracer.cpp.o" \
-"CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o" \
+"CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o" \
+"CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o" \
+"CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.o" \
 "CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer.cpp.o" \
+"CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.o" \
+"CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.o" \
+"CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.o" \
 "CMakeFiles/cs148raytracer.dir/common/Rendering/Material/Material.cpp.o" \
 "CMakeFiles/cs148raytracer.dir/common/Rendering/Material/BlinnPhong/BlinnPhongMaterial.cpp.o" \
 "CMakeFiles/cs148raytracer.dir/common/Utility/Mesh/Loading/MeshLoader.cpp.o" \
+"CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.o" \
 "CMakeFiles/cs148raytracer.dir/common/Utility/Timer/Timer.cpp.o" \
 "CMakeFiles/cs148raytracer.dir/common/Utility/Diagnostics/Diagnostics.cpp.o" \
-"CMakeFiles/cs148raytracer.dir/assignment5/Assignment5.cpp.o"
+"CMakeFiles/cs148raytracer.dir/assignment5/Assignment5.cpp.o" \
+"CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.o" \
+"CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.o" \
+"CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.o"
 
 # External object files for target cs148raytracer
 cs148raytracer_EXTERNAL_OBJECTS =
@@ -829,6 +1165,10 @@ cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Sampling/Jitter/JitterColor
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Sampling/ColorSampler.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Output/ImageWriter.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Intersection/IntersectionState.cpp.o
+cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o
+cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.o
+cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o
+cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationGenerator.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Acceleration/BVH/Internal/BVHNode.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Acceleration/BVH/BVHAcceleration.cpp.o
@@ -838,6 +1178,7 @@ cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Scene/SceneObject.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Scene/Scene.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Directional/DirectionalLight.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Light.cpp.o
+cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Point/PointLight.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Primitives/Triangle/Triangle.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Ray/Ray.cpp.o
@@ -847,14 +1188,23 @@ cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Scene/Camera/Perspective/Pe
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Scene/Camera/Camera.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Application.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/RayTracer.cpp.o
-cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o
+cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o
+cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o
+cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer.cpp.o
+cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.o
+cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.o
+cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Rendering/Material/Material.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Rendering/Material/BlinnPhong/BlinnPhongMaterial.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Utility/Mesh/Loading/MeshLoader.cpp.o
+cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Utility/Timer/Timer.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/common/Utility/Diagnostics/Diagnostics.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/assignment5/Assignment5.cpp.o
+cs148raytracer: CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.o
+cs148raytracer: CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.o
+cs148raytracer: CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.o
 cs148raytracer: CMakeFiles/cs148raytracer.dir/build.make
 cs148raytracer: ../external/assimp/distrib/unix/libassimp.so
 cs148raytracer: /usr/lib/libfreeimage.so
@@ -872,6 +1222,10 @@ CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Sam
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Sampling/ColorSampler.cpp.o.requires
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Output/ImageWriter.cpp.o.requires
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Intersection/IntersectionState.cpp.o.requires
+CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/VoxelGrid.cpp.o.requires
+CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/Internal/Voxel.cpp.o.requires
+CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Acceleration/UniformGrid/UniformGridAcceleration.cpp.o.requires
+CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationNode.cpp.o.requires
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Acceleration/AccelerationGenerator.cpp.o.requires
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Acceleration/BVH/Internal/BVHNode.cpp.o.requires
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Acceleration/BVH/BVHAcceleration.cpp.o.requires
@@ -881,6 +1235,7 @@ CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Sce
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Scene/Scene.cpp.o.requires
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Directional/DirectionalLight.cpp.o.requires
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Light.cpp.o.requires
+CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Area/AreaLight.cpp.o.requires
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Scene/Lights/Point/PointLight.cpp.o.requires
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Primitives/Triangle/Triangle.cpp.o.requires
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Scene/Geometry/Ray/Ray.cpp.o.requires
@@ -890,14 +1245,23 @@ CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Sce
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Scene/Camera/Camera.cpp.o.requires
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Application.cpp.o.requires
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/RayTracer.cpp.o.requires
-CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Forward/ForwardRenderer.cpp.o.requires
+CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Backward/BackwardRenderer.cpp.o.requires
+CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/PhotonMappingRenderer.cpp.o.requires
+CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer/Photon/Photon.cpp.o.requires
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Rendering/Renderer.cpp.o.requires
+CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture.cpp.o.requires
+CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/CubeMapTexture.cpp.o.requires
+CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Rendering/Textures/Texture2D.cpp.o.requires
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Rendering/Material/Material.cpp.o.requires
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Rendering/Material/BlinnPhong/BlinnPhongMaterial.cpp.o.requires
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Utility/Mesh/Loading/MeshLoader.cpp.o.requires
+CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Utility/Texture/TextureLoader.cpp.o.requires
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Utility/Timer/Timer.cpp.o.requires
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/common/Utility/Diagnostics/Diagnostics.cpp.o.requires
 CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/assignment5/Assignment5.cpp.o.requires
+CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/assignment7/Assignment7.cpp.o.requires
+CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/assignment8/Assignment8.cpp.o.requires
+CMakeFiles/cs148raytracer.dir/requires: CMakeFiles/cs148raytracer.dir/assignment6/Assignment6.cpp.o.requires
 .PHONY : CMakeFiles/cs148raytracer.dir/requires
 
 CMakeFiles/cs148raytracer.dir/clean:

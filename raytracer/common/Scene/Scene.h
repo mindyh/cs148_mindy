@@ -11,7 +11,7 @@ class Scene : public std::enable_shared_from_this<Scene>
 {
 public:
     void GenerateDefaultAccelerationData();
-    void GenerateAccelerationData(AccelerationTypes inputType);
+    class AccelerationStructure* GenerateAccelerationData(AccelerationTypes inputType);
 
     // if outputIntersection is NULL, this merely checks whether or not the inputRay hits something.
     // if outputIntersection is NOT NULL, then this will check whether or not the inputRay hits something,
@@ -49,8 +49,11 @@ public:
     void AddLight(std::shared_ptr<Light> light);
 
     void Finalize();
+
+    void PerformRaySpecularReflection(Ray& outputRay, const Ray& inputRay, const glm::vec3& intersectionPoint, const float NdR, const IntersectionState& state) const;
+    void PerformRayRefraction(Ray& outputRay, const Ray& inputRay, const glm::vec3& intersectionPoint, const float NdR, const IntersectionState& state, float& targetIOR) const;
 private:
-    class std::shared_ptr<class AccelerationStructure> acceleration;
+    std::shared_ptr<class AccelerationStructure> acceleration;
 
     std::vector<std::shared_ptr<SceneObject>> sceneObjects;
     std::vector<std::shared_ptr<Light>> sceneLights;

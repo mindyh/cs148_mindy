@@ -14,12 +14,4 @@ public:
     virtual int GetMaxReflectionBounces() const override;
     virtual int GetMaxRefractionBounces() const override;
     virtual glm::vec2 GetImageOutputResolution() const override;
-
-private:
-    void MakeMesh(std::string file_name) const;
-	void CreateCubes(std::shared_ptr<Scene> scene) const;
-	void CreateAvengers(std::shared_ptr<Scene> scene) const;
-	void MakeBPMesh(std::string file_name, std::shared_ptr<Scene> scene, 
-					glm::vec3 pos = glm::vec3(0), glm::vec3 rot = glm::vec3(0), float rot_angle = 0) const;
-	void MakePointLight(glm::vec3 position, glm::vec3 color, std::shared_ptr<Scene> scene) const;
 };
