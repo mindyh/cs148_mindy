@@ -16,4 +16,10 @@ public:
     virtual glm::vec2 GetImageOutputResolution() const override;
 	virtual float GetFocusPlane() const override;
 	virtual float GetAperture() const;
+private:
+    void AddMesh(std::shared_ptr<Scene> scene, std::string filename, float reflectivity = 0,
+                glm::vec3 rotation=glm::vec3(0), glm::vec3 translation=glm::vec3(0)) const;
+    void AddLight(std::shared_ptr<Scene> scene, glm::vec3 position=glm::vec3(0), glm::vec3 color=glm::vec3(0)) const;
+    void CreateCornellBoxes(std::shared_ptr<Scene> scene) const; 
+    void CreateWallE(std::shared_ptr<Scene> scene) const; 
 };
