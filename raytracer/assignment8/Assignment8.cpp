@@ -8,11 +8,12 @@ std::shared_ptr<Camera> Assignment8::CreateCamera() const
     const glm::vec2 resolution = GetImageOutputResolution();
     std::shared_ptr<Camera> camera = std::make_shared<PerspectiveCamera>(resolution.x / resolution.y, 32.267f); // 54.43 Angle of view
     
-    // walle
+    // glases
     if (GLASSES) {
-    	camera->SetPosition(glm::vec3(237.6f, 60.134f, 130.329f));
-	    camera->Rotate(glm::vec3(1.f, 0.f, 0.f), -1.538f * PI / 180.f);  
-	    camera->Rotate(glm::vec3(0.f, 1.f, 0.f), 60.6f * PI / 180.f);  
+    	camera->SetPosition(glm::vec3(62.328f, 26.579f, -26.932f));
+    	// camera->SetPosition(glm::vec3(62.328f, 22.579f, -26.932f));
+	    camera->Rotate(glm::vec3(1.f, 0.f, 0.f), -3.862 * PI / 180.f);  
+	    camera->Rotate(glm::vec3(0.f, 1.f, 0.f), 138.2f * PI / 180.f);  
 	    camera->Rotate(glm::vec3(0.f, 0.f, 1.f), 0.f * PI / 180.f);  
     } else {
     	// box
@@ -71,34 +72,44 @@ void Assignment8::AddLight(std::shared_ptr<Scene> scene, glm::vec3 position, glm
     scene->AddLight(pointLight);
 }
 
+void Assignment8::AddAreaLight(std::shared_ptr<Scene> scene, glm::vec3 position, glm::vec3 color,
+                               float size, ) const {
+     // Lights
+    std::shared_ptr<AreaLight> areaLight = std::make_shared<AreaLight>();
+    areaLight->SetPosition(position);
+    areaLight->SetLightColor(color);
+    scene->AddLight(areaLight);
+}
+
 void Assignment8::CreateCornellBoxes(std::shared_ptr<Scene> scene) const 
 {
 	AddMesh(scene, "CornellBox/CornellBox-Assignment8.obj", 0, glm::vec3(PI/2.f, 0, 0));	
 	AddLight(scene, glm::vec3(0.01909f, 0.0101f, 1.97028f), glm::vec3(1.f, 1.f, 1.f));
 }
 
-void Assignment8::CreateWallE(std::shared_ptr<Scene> scene) const 
+void Assignment8::CreateGlasses(std::shared_ptr<Scene> scene) const 
 {
-	// light bulb
-	AddMesh(scene, "bulb/bulb.obj", 0.4);	
-	AddMesh(scene, "bulb/bulb_base.obj", 0.2);	
-	// table
-	AddMesh(scene, "table/table.obj", 0.3);	
-	// Eve
-	AddMesh(scene, "eve/Eve.obj", 0.2);	
-	// Walle
-	AddMesh(scene, "walle/walle.obj", 0);	
+	// glasses
+	AddMesh(scene, "aviators/ears.obj", 0);
+	AddMesh(scene, "aviators/glass.obj", 0.7);
+	AddMesh(scene, "aviators/frame.obj", 0.2);
+	AddMesh(scene, "aviators/nose.obj", 0);
+	// coke
+	AddMesh(scene, "coke_can/can.obj", 0.1);
+	// surface
+	AddMesh(scene, "surface/surface.obj", 0);
 
 	// lights
-	AddLight(scene, glm::vec3(107.567f, 115.630f, 74.016f), glm::vec3(1.f, 1.f, 1.f));
-}
+    AddLight(scene, glm::vec3(-63.386f, 188.667f, -5.751f), glm::vec3(1.f, 1.f, 1.f));
+// 	AddAreaLight(scene, );
+// }
 
 std::shared_ptr<Scene> Assignment8::CreateScene() const
 {
     std::shared_ptr<Scene> newScene = std::make_shared<Scene>();
 
-    if(WALLE)
-    	CreateWallE(newScene);
+    if(GLASSES)
+    	CreateGlasses(newScene);
     else 
    		CreateCornellBoxes(newScene);
 
@@ -143,15 +154,15 @@ int Assignment8::GetSamplesPerPixel() const
 
 float Assignment8::GetFocusPlane() const
 {
-	if (WALLE)
-		return 100.f;
+	if (GLASSES)
+		return 130.f;
 	else
 		return 3.5f;
 }
 
 float Assignment8::GetAperture() const
 {
-	return 0.1f;
+	return 2.f;
 }
 
 bool Assignment8::NotifyNewPixelSample(glm::vec3 inputSampleColor, int sampleIndex)
@@ -171,5 +182,6 @@ int Assignment8::GetMaxRefractionBounces() const
 
 glm::vec2 Assignment8::GetImageOutputResolution() const
 {
-    return glm::vec2(640.f, 480.f);
+    return glm::vec2(720.f, 576.f);
+    // return glm::vec2(640.f, 480.f);
 }
