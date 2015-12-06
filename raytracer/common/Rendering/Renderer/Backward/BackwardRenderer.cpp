@@ -7,6 +7,8 @@
 #include "common/Rendering/Material/Material.h"
 #include "common/Intersection/IntersectionState.h"
 
+#include <stdio.h>
+
 BackwardRenderer::BackwardRenderer(std::shared_ptr<Scene> scene, std::shared_ptr<ColorSampler> sampler) :
     Renderer(scene, sampler)
 {

@@ -3,6 +3,9 @@
 #include "common/Intersection/IntersectionState.h"
 #include "common/Scene/Lights/Light.h"
 #include "assimp/material.h"
+#include "common/Rendering/Textures/Texture.h"
+
+#include <stdio.h>
 
 Material::Material():
     reflectivity(0.f), transmittance(0.f), indexOfRefraction(1.f)
@@ -25,7 +28,14 @@ glm::vec3 Material::ComputeNonLightDependentBRDF(const class Renderer* renderer,
 {
     const glm::vec3 reflectionColor = ComputeReflection(renderer, intersection);
     const glm::vec3 transmissionColor = ComputeTransmission(renderer, intersection);
-    return reflectivity * reflectionColor + transmittance * transmissionColor + ambient;
+    const glm::vec3 pierColor = (textureStorage.find("sky/pier.obj") != textureStorage.end()) ? 
+        glm::vec3(textureStorage.at("sky/pier.obj")->Sample(intersection.ComputeUV())) : 
+        glm::vec3();
+    const glm::vec3 beachColor = (textureStorage.find("sky/beach.obj") != textureStorage.end()) ? 
+        glm::vec3(textureStorage.at("sky/beach.obj")->Sample(intersection.ComputeUV())) : 
+        glm::vec3();
+    return reflectivity * reflectionColor + transmittance * transmissionColor + ambient +
+            beachColor + pierColor;
 }
 
 glm::vec3 Material::ComputeBRDF(const struct IntersectionState& intersection, const glm::vec3& lightColor, const class Ray& toLightRay, const class Ray& fromCameraRay, float lightAttenuation, bool computeDiffuse, bool computeSpecular) const

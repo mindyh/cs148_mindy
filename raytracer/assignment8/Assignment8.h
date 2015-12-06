@@ -19,7 +19,11 @@ public:
 private:
     void AddMesh(std::shared_ptr<Scene> scene, std::string filename, float reflectivity = 0,
                 glm::vec3 rotation=glm::vec3(0), glm::vec3 translation=glm::vec3(0)) const;
+    void AddSkyPlane(std::shared_ptr<Scene> scene, std::string mesh_filename, std::string texture_filename,
+                     glm::vec3 rotation=glm::vec3(0), glm::vec3 translation=glm::vec3(0)) const;
     void AddLight(std::shared_ptr<Scene> scene, glm::vec3 position=glm::vec3(0), glm::vec3 color=glm::vec3(0)) const;
     void CreateCornellBoxes(std::shared_ptr<Scene> scene) const; 
     void CreateGlasses(std::shared_ptr<Scene> scene) const; 
+    void AddAreaLight(std::shared_ptr<Scene> scene, glm::vec3 position, glm::vec3 rotation, 
+                      glm::vec3 color, glm::vec2 size) const;
 };
