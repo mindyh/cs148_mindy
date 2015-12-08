@@ -47,7 +47,7 @@ void RayTracer::Run()
     assert(maxSamplesPerPixel >= 1);
 
     // for each pixel on the image
-    #pragma omp parallel for num_threads(8)
+    #pragma omp parallel for num_threads(16)
     for (int y = 0; y < static_cast<int>(currentResolution.y); ++y) {
         for (int x = 0; x < static_cast<int>(currentResolution.x); ++x) {
             // lambda that write pixel samples to image?

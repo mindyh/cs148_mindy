@@ -14,15 +14,16 @@ std::shared_ptr<Camera> Assignment8::CreateCamera() const
     
     // glases
     if (GLASSES) {
+        // FINAL
     	camera->SetPosition(glm::vec3(64.549f, 11.266f, -26.25f));
-    	// camera->SetPosition(glm::vec3(62.328f, 22.579f, -26.932f));
 	    camera->Rotate(glm::vec3(1.f, 0.f, 0.f), 5.662f * PI / 180.f);  
         camera->Rotate(glm::vec3(0.f, 1.f, 0.f), 137.4f * PI / 180.f);  
         camera->Rotate(glm::vec3(0.f, 0.f, 1.f), 0 * PI / 180.f);  
-        // camera->Rotate(glm::vec3(1.f, 0.f, 0.f), -3.862 * PI / 180.f);  
-	    // camera->Rotate(glm::vec3(0.f, 1.f, 0.f), 138.2f * PI / 180.f);  
-	    // camera->Rotate(glm::vec3(0.f, 0.f, 1.f), 0.f * PI / 180.f);  
-    
+        // TEST
+        // camera->SetPosition(glm::vec3(-13.533f, 32.192f, -81.886f));
+        // camera->Rotate(glm::vec3(1.f, 0.f, 0.f), -6.938f * PI / 180.f);  
+        // camera->Rotate(glm::vec3(0.f, 1.f, 0.f), 170.2f * PI / 180.f);  
+        // camera->Rotate(glm::vec3(0.f, 0.f, 1.f), 0 * PI / 180.f);  
     } else {
     	// box
 	    camera->SetPosition(glm::vec3(0.f, -4.1469f, 0.73693f));
@@ -32,44 +33,43 @@ std::shared_ptr<Camera> Assignment8::CreateCamera() const
     return camera;
 }
 
-void Assignment8::AddMesh(std::shared_ptr<Scene> scene, std::string filename,
-							float reflectivity,
-							glm::vec3 rotation, glm::vec3 translation) const 
+void Assignment8::AddMesh(std::shared_ptr<Scene> scene, std::string filename, 
+							float reflectivity,glm::vec3 rotation, glm::vec3 translation) const 
 {
  	// Material
-    std::shared_ptr<BlinnPhongMaterial> cubeMaterial = std::make_shared<BlinnPhongMaterial>();
-    cubeMaterial->SetReflectivity(reflectivity);
+    std::shared_ptr<BlinnPhongMaterial> material = std::make_shared<BlinnPhongMaterial>();
+    material->SetReflectivity(reflectivity);
 
     // Objects
     std::vector<std::shared_ptr<aiMaterial>> loadedMaterials;
-    std::vector<std::shared_ptr<MeshObject>> cubeObjects = MeshLoader::LoadMesh(filename, &loadedMaterials);
-    for (size_t i = 0; i < cubeObjects.size(); ++i) {
-        std::shared_ptr<Material> materialCopy = cubeMaterial->Clone();
+    std::vector<std::shared_ptr<MeshObject>> meshObjects = MeshLoader::LoadMesh(filename, &loadedMaterials);
+    for (size_t i = 0; i < meshObjects.size(); ++i) {
+        std::shared_ptr<Material> materialCopy = material->Clone();
         materialCopy->LoadMaterialFromAssimp(loadedMaterials[i]);
-        cubeObjects[i]->SetMaterial(materialCopy);
+        meshObjects[i]->SetMaterial(materialCopy);
     }
 
-    std::shared_ptr<SceneObject> cubeSceneObject = std::make_shared<SceneObject>();
-    cubeSceneObject->AddMeshObject(cubeObjects);
-    cubeSceneObject->Rotate(glm::vec3(1.f, 0.f, 0.f), rotation.x);
-    cubeSceneObject->Rotate(glm::vec3(0.f, 1.f, 0.f), rotation.y);
-    cubeSceneObject->Rotate(glm::vec3(0.f, 0.f, 1.f), rotation.z);
-    cubeSceneObject->Translate(translation);
-    cubeSceneObject->CreateAccelerationData(AccelerationTypes::BVH);
+    std::shared_ptr<SceneObject> sceneObject = std::make_shared<SceneObject>();
+    sceneObject->AddMeshObject(meshObjects);
+    sceneObject->Rotate(glm::vec3(1.f, 0.f, 0.f), rotation.x);
+    sceneObject->Rotate(glm::vec3(0.f, 1.f, 0.f), rotation.y);
+    sceneObject->Rotate(glm::vec3(0.f, 0.f, 1.f), rotation.z);
+    sceneObject->Translate(translation);
+    sceneObject->CreateAccelerationData(AccelerationTypes::BVH);
 
-	cubeSceneObject->ConfigureAccelerationStructure([](AccelerationStructure* genericAccelerator) {
+	sceneObject->ConfigureAccelerationStructure([](AccelerationStructure* genericAccelerator) {
         BVHAcceleration* accelerator = dynamic_cast<BVHAcceleration*>(genericAccelerator);
         accelerator->SetMaximumChildren(2);
         accelerator->SetNodesOnLeaves(2);
     });
 
-    cubeSceneObject->ConfigureChildMeshAccelerationStructure([](AccelerationStructure* genericAccelerator) {
+    sceneObject->ConfigureChildMeshAccelerationStructure([](AccelerationStructure* genericAccelerator) {
         BVHAcceleration* accelerator = dynamic_cast<BVHAcceleration*>(genericAccelerator);
         accelerator->SetMaximumChildren(2);
         accelerator->SetNodesOnLeaves(2);
     });
 
-    scene->AddSceneObject(cubeSceneObject);
+    scene->AddSceneObject(sceneObject);
 }
 
 void Assignment8::AddSkyPlane(std::shared_ptr<Scene> scene, std::string mesh_filename,
@@ -148,19 +148,18 @@ void Assignment8::CreateGlasses(std::shared_ptr<Scene> scene) const
 
 	// glasses
 	AddMesh(scene, "aviators/ears.obj", 0);
-	AddMesh(scene, "aviators/glass.obj", 0.7);
-	AddMesh(scene, "aviators/frame.obj", 0.3);
+    // AddMesh(scene, "aviators/glass.obj", 0);
+	AddMesh(scene, "aviators/glass.obj", 0.8);
+	AddMesh(scene, "aviators/frame.obj", 0.35);
 	AddMesh(scene, "aviators/nose.obj", 0);
-	// coke
-	// AddMesh(scene, "coke_can/can.obj", 0.1);
 	// surface
 	AddMesh(scene, "table/table.obj", 0);
 
 	// lights
     AddLight(scene, glm::vec3(-307.42f, 297.926f, -1756.349f), glm::vec3(1.f, 1.f, 0.9f));
-    AddAreaLight(scene, glm::vec3(-193.893f, 379.69f, -319.701), glm::vec3(171.459f, -23.202f, -179.324f),
- 	// // AddAreaLight(scene, glm::vec3(-193.893f, 379.69f, -319.701), glm::vec3(-90, 0, 0),
-        glm::vec3(1.f, 1.f, 0.9), glm::vec2(7289.348f, 3182.129f));
+    // main
+    AddAreaLight(scene, glm::vec3(11.928f, 434.29f, -596.735f), glm::vec3(-147.068f, -5.693f, 0.f),
+        glm::vec3(1.f, 1.f, 0.9f), glm::vec2(149.263f, 149.263f));
 }
 
 std::shared_ptr<Scene> Assignment8::CreateScene() const
@@ -208,7 +207,7 @@ std::shared_ptr<class Renderer> Assignment8::CreateRenderer(std::shared_ptr<Scen
 
 int Assignment8::GetSamplesPerPixel() const
 {
-    return 4; 
+    return 200; 
 }
 
 float Assignment8::GetFocusPlane() const
@@ -231,17 +230,18 @@ bool Assignment8::NotifyNewPixelSample(glm::vec3 inputSampleColor, int sampleInd
 
 int Assignment8::GetMaxReflectionBounces() const
 {
-    return 3;
+    return 8;
 }
 
 int Assignment8::GetMaxRefractionBounces() const
 {
-    return 3;
+    return 0;
 }
 
 glm::vec2 Assignment8::GetImageOutputResolution() const
 {
-    // return glm::vec2(720.f, 576.f);
-    // return glm::vec2(640.f, 480.f);
-    return glm::vec2(950.f, 540.f);
+    return glm::vec2(1900.f, 1080.f);
+    // return glm::vec2(950.f, 540.f);
+    // return glm::vec2(475.f, 270.f);
+
 }

@@ -3,7 +3,9 @@
 #include "common/Intersection/IntersectionState.h"
 #include "common/Scene/Lights/Light.h"
 #include "assimp/material.h"
-#include "common/Rendering/Textures/Texture.h"
+
+#include "common/Rendering/Textures/Texture2D.h"
+// #include "common/Rendering/Textures/Texture.h"
 
 #include <stdio.h>
 
