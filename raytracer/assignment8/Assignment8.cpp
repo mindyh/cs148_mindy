@@ -39,6 +39,7 @@ void Assignment8::AddMesh(std::shared_ptr<Scene> scene, std::string filename,
  	// Material
     std::shared_ptr<BlinnPhongMaterial> material = std::make_shared<BlinnPhongMaterial>();
     material->SetReflectivity(reflectivity);
+    material->SetTransmittance(0);
 
     // Objects
     std::vector<std::shared_ptr<aiMaterial>> loadedMaterials;
@@ -149,17 +150,18 @@ void Assignment8::CreateGlasses(std::shared_ptr<Scene> scene) const
 	// glasses
 	AddMesh(scene, "aviators/ears.obj", 0);
     // AddMesh(scene, "aviators/glass.obj", 0);
-	AddMesh(scene, "aviators/glass.obj", 0.8);
-	AddMesh(scene, "aviators/frame.obj", 0.35);
+    AddMesh(scene, "aviators/glass.obj", 0.8);
+	AddMesh(scene, "aviators/glass_reverse.obj", 0);
+	AddMesh(scene, "aviators/frame.obj", 0.25);
 	AddMesh(scene, "aviators/nose.obj", 0);
 	// surface
 	AddMesh(scene, "table/table.obj", 0);
 
 	// lights
-    AddLight(scene, glm::vec3(-307.42f, 297.926f, -1756.349f), glm::vec3(1.f, 1.f, 0.9f));
+    AddLight(scene, glm::vec3(-307.42f, 297.926f, -1756.349f), glm::vec3(0.9f, 0.9f, 0.8f));
     // main
     AddAreaLight(scene, glm::vec3(11.928f, 434.29f, -596.735f), glm::vec3(-147.068f, -5.693f, 0.f),
-        glm::vec3(1.f, 1.f, 0.9f), glm::vec2(149.263f, 149.263f));
+        glm::vec3(0.9f, 0.9f, 0.8f), glm::vec2(149.263f, 149.263f));
 }
 
 std::shared_ptr<Scene> Assignment8::CreateScene() const
@@ -207,7 +209,8 @@ std::shared_ptr<class Renderer> Assignment8::CreateRenderer(std::shared_ptr<Scen
 
 int Assignment8::GetSamplesPerPixel() const
 {
-    return 200; 
+    return 16; 
+    // return 256; 
 }
 
 float Assignment8::GetFocusPlane() const
@@ -230,7 +233,7 @@ bool Assignment8::NotifyNewPixelSample(glm::vec3 inputSampleColor, int sampleInd
 
 int Assignment8::GetMaxReflectionBounces() const
 {
-    return 8;
+    return 3;
 }
 
 int Assignment8::GetMaxRefractionBounces() const
@@ -240,8 +243,8 @@ int Assignment8::GetMaxRefractionBounces() const
 
 glm::vec2 Assignment8::GetImageOutputResolution() const
 {
-    return glm::vec2(1900.f, 1080.f);
-    // return glm::vec2(950.f, 540.f);
+    // return glm::vec2(1900.f, 1080.f);
+    return glm::vec2(950.f, 540.f);
     // return glm::vec2(475.f, 270.f);
 
 }
